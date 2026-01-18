@@ -47,7 +47,9 @@ services:
       - key: GOOGLE_API_KEY
         sync: false
       - key: QDRANT_URL
-        value: http://qdrant-db:6333
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
       - key: DATABASE_URL
         value: mysql+pymysql://root:${mysql-db.MYSQL_ROOT_PASSWORD}@mysql-db:3306/local_db
       - key: REDIS_URL
@@ -68,15 +70,6 @@ services:
         value: local_db
       - key: MYSQL_ROOT_PASSWORD
         generateValue: true
-
-  # Qdrant (Ephemeral Vector DB - Data lost on restart)
-  - type: pserv
-    name: qdrant-db
-    env: image
-    image: 
-      url: qdrant/qdrant:latest
-    plan: free
-
 
   # Redis (Free Managed)
   - type: redis
