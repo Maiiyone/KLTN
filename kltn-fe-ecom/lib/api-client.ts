@@ -1,7 +1,10 @@
 import axios, { AxiosError } from 'axios';
 
 // Base API URL - you should update this to your actual API URL
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+let BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+if (BASE_URL && !BASE_URL.startsWith('http')) {
+  BASE_URL = `https://${BASE_URL}`;
+}
 
 export const apiClient = axios.create({
   baseURL: BASE_URL,

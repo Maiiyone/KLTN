@@ -11,12 +11,12 @@ services:
         fromService:
           type: web
           name: be-api-service
-          property: url
+          property: host
       - key: NEXT_PUBLIC_CHATBOT_URL
         fromService:
           type: web
           name: chatbot-service
-          property: url
+          property: host
 
   # Backend Service
   - type: web

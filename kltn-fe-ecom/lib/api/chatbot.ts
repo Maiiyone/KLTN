@@ -2,7 +2,11 @@ import axios, { AxiosError } from 'axios';
 import { ChatSession, ChatResponse } from '../types';
 
 // Chatbot service runs on port 8001
-const CHATBOT_BASE_URL = process.env.NEXT_PUBLIC_CHATBOT_URL || 'http://localhost:8001/api/v1';
+// Chatbot service runs on port 8001
+let CHATBOT_BASE_URL = process.env.NEXT_PUBLIC_CHATBOT_URL || 'http://localhost:8001/api/v1';
+if (CHATBOT_BASE_URL && !CHATBOT_BASE_URL.startsWith('http')) {
+  CHATBOT_BASE_URL = `https://${CHATBOT_BASE_URL}`;
+}
 
 // Create separate axios instance for chatbot service
 const chatbotClient = axios.create({
