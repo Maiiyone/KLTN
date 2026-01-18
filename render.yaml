@@ -76,10 +76,7 @@ services:
     image: 
       url: qdrant/qdrant:latest
     plan: free
-    disk:
-      name: qdrant-data
-      mountPath: /qdrant/storage
-      sizeGB: 1
+
 
   # Redis (Free Managed)
   - type: redis
