@@ -62,8 +62,9 @@ services:
   # Database (Ephemeral MySQL - Data lost on restart)
   - type: pserv
     name: mysql-db
-    env: docker
-    image: mysql:8.0
+    env: image
+    image: 
+      url: mysql:8.0
     plan: free
     envVars:
       - key: MYSQL_DATABASE
