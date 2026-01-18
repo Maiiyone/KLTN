@@ -13,7 +13,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Cung cấp nông sản sạch, chất lượng cao từ các trang trại địa phương. 
+              Cung cấp nông sản sạch, chất lượng cao từ các trang trại địa phương.
               Cam kết mang đến sự tươi ngon và an toàn cho mọi gia đình.
             </p>
           </div>
@@ -49,7 +49,7 @@ export function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-center gap-2">
                 <span className="text-green-400">📧</span>
-                <span>contact@nongsanxanh.vn</span>
+                <span>contact@noongsanxanh.edu.vn</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-green-400">📞</span>
