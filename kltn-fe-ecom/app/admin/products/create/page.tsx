@@ -16,7 +16,7 @@ export default function CreateProductPage() {
   const router = useRouter();
   const [submitting, setSubmitting] = useState(false);
 
-  const { register, handleSubmit, formState: { errors } } = useForm({
+  const { register, handleSubmit, formState: { errors } } = useForm<CreateProductData>({
     defaultValues: {
       is_active: true,
       stock_quantity: 0,
@@ -207,9 +207,9 @@ export default function CreateProductPage() {
 
           {/* Action Buttons */}
           <div className="flex items-center justify-end gap-4 sticky bottom-0 bg-white p-4 border-t border-gray-200 rounded-lg shadow-lg">
-            <Button 
-              type="button" 
-              variant="outline" 
+            <Button
+              type="button"
+              variant="outline"
               onClick={() => router.push('/admin/products')}
             >
               Hủy

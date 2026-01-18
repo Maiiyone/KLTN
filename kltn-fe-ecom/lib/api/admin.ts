@@ -79,6 +79,7 @@ export interface CreateProductData {
   product_position?: number;
   description?: string;
   stock_quantity?: number;
+  is_active?: boolean;
 }
 
 export interface UpdateProductData {
