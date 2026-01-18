@@ -27,7 +27,7 @@ services:
     plan: free
     envVars:
       - key: DATABASE_URL
-        value: mysql+pymysql://root:${mysql-db.MYSQL_ROOT_PASSWORD}@mysql-db:3306/local_db
+        sync: false
       - key: REDIS_URL
         fromService:
           type: redis
@@ -46,30 +46,19 @@ services:
     envVars:
       - key: GOOGLE_API_KEY
         sync: false
+      - key: GOOGLE_API_KEY
+        sync: false
       - key: QDRANT_URL
         sync: false
       - key: QDRANT_API_KEY
         sync: false
       - key: DATABASE_URL
-        value: mysql+pymysql://root:${mysql-db.MYSQL_ROOT_PASSWORD}@mysql-db:3306/local_db
+        sync: false
       - key: REDIS_URL
         fromService:
           type: redis
           name: redis-queue
           property: connectionString
-
-  # Database (Ephemeral MySQL - Data lost on restart)
-  - type: pserv
-    name: mysql-db
-    env: image
-    image: 
-      url: mysql:8.0
-    plan: free
-    envVars:
-      - key: MYSQL_DATABASE
-        value: local_db
-      - key: MYSQL_ROOT_PASSWORD
-        generateValue: true
 
   # Redis (Free Managed)
   - type: redis
