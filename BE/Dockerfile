@@ -26,4 +26,5 @@ COPY . .
 EXPOSE 8000
 
 # Run the application
-CMD ["python", "-m", "app.run"]
+# Run the application (and migration)
+CMD ["sh", "-c", "python create_tables.py && python -m app.run"]

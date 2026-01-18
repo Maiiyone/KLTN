@@ -8,9 +8,15 @@ services:
     plan: free
     envVars:
       - key: NEXT_PUBLIC_API_URL
-        value: https://be-api-service.onrender.com # Update with actual BE URL after deploy
+        fromService:
+          type: web
+          name: be-api-service
+          property: url
       - key: NEXT_PUBLIC_CHATBOT_URL
-        value: https://chatbot-service.onrender.com # Update with actual Chatbot URL after deploy
+        fromService:
+          type: web
+          name: chatbot-service
+          property: url
 
   # Backend Service
   - type: web
@@ -21,9 +27,12 @@ services:
     plan: free
     envVars:
       - key: DATABASE_URL
-        sync: false # Set in Render Dashboard
+        value: mysql+pymysql://root:${mysql-db.MYSQL_ROOT_PASSWORD}@mysql-db:3306/local_db
       - key: REDIS_URL
-        sync: false 
+        fromService:
+          type: redis
+          name: redis-queue
+          property: connectionString
       - key: SECRET_KEY
         generateValue: true
 
@@ -41,3 +50,29 @@ services:
         sync: false
       - key: QDRANT_API_KEY
         sync: false
+      # Chatbot might need DB/Redis too?
+      - key: DATABASE_URL
+        value: mysql+pymysql://root:${mysql-db.MYSQL_ROOT_PASSWORD}@mysql-db:3306/local_db
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: redis-queue
+          property: connectionString
+
+  # Database (Ephemeral MySQL - Data lost on restart)
+  - type: pserv
+    name: mysql-db
+    env: docker
+    image: mysql:8.0
+    plan: free
+    envVars:
+      - key: MYSQL_DATABASE
+        value: local_db
+      - key: MYSQL_ROOT_PASSWORD
+        generateValue: true
+
+  # Redis (Free Managed)
+  - type: redis
+    name: redis-queue
+    plan: free
+    ipAllowList: []
