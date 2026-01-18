@@ -1,0 +1,116 @@
+Mục tiêu: Tổng hợp ngắn gọn (technical) quy trình xử lý dữ liệu từ cào trang web → JSON → import DB (MySQL) và xuất SQL.
+
+1) Cào dữ liệu từ website (Selenium + BeautifulSoup)
+- Thành phần chính: bhx_script.py → lớp WebScraper
+- Cơ chế tải nội dung:
+  - Mở URL danh mục, chờ trang tải (delay có kiểm soát 30s), sau đó cuộn dần xuống cuối trang (scroll từng bước) để chờ trang web tải hết
+- Thu thập dữ liệu:
+  - Lấy outerHTML của khu vực danh sách sản phẩm (theo XPATH gốc) sau khi trang đã tải đầy đủ.
+  - Dùng BeautifulSoup để tìm tất cả các thẻ div chứa class "this-item".
+  - Với mỗi sản phẩm, trích xuất các trường: product_code, product_url, product_id, title, product_name, current_price/current_price_text, original_price/original_price_text, discount_percent/discount_text, image_url, image_alt; đồng thời gắn thêm product_position.
+- Kết quả: danh sách sản phẩm (list[dict]).
+
+2) Chuẩn hóa và lưu dữ liệu
+  - Giá sản phẩm ko như định dạng số, xử lý chuỗi, cắt chuỗi current_price, có định dạng 32500350, có nghĩa là giá 32500đ/350g
+  - Chuẩn hóa giá: loại ký tự không phải số, ép kiểu int, cắt chuỗi từ sau ra trước, để lấy ra đc đơn vị, và giá tiền
+  - Bảo toàn các field mô tả (title, image_alt) và liên kết (product_url).
+
+3) Chuyển đổi và nạp vào MySQL
+- Các bước xử lý:
+  - Kết nối MySQL
+  - Đọc file total_products.json và ánh xạ field → cột.
+  - Thực hiện insert hàng loạt vào table
+
+4) Artefacts/đầu ra chính
+- total_products.json: dữ liệu sản phẩm đã chuẩn hóa sau khi cào.
+- Database MySQL: schema "bhx_products" chứa bảng dữ liệu sản phẩm.
+
+- Trường giá giữ cả dạng số (phục vụ truy vấn/tính toán) và dạng text (tham chiếu hiển thị).
+
+Các file thực hiện:
+ (1)- chạy file bhx_script.py: -> ra đc file raw_total_products.json
+ (2)- chạy process_price_unit -> ra đc file total_products_processed_all.json
+ (3)- chạy convert_bhx_json_sql để thực hiện import vô trong mysql
+
+Pipeline Embedding → Qdrant (sau khi có total_products_processed_all.json):
+
+A. Tổng quan flow:
+  1. Load JSON products
+  2. Render text cho mỗi sản phẩm (ghép title, giá, unit, URL)
+  3. Embedding text thành vectors (768 chiều)
+  4. Build points (vector + metadata payload)
+  5. Upsert vào Qdrant collection
+
+B. Chi tiết từng bước:
+
+Bước 1: Load và render text
+- Đọc file JSON chứa danh sách sản phẩm
+- Với mỗi product, ghép các field thành text search-friendly:
+  Format: "title | current_price_text | unit | product_url"
+  Ví dụ: "Bắp mỹ | 10.000đ/1 trái 300-400g | 400g | /cu/bap-my-1-trai"
+- Lý do: Kết hợp nhiều field giúp semantic search hiểu context đầy đủ hơn
+
+Bước 2: Embedding - Chuyển text thành vectors
+
+Provider: Gemini (google-generativeai)
+Model: text-embedding-004
+Dimension: 768 chiều
+
+Tại sao chọn Gemini text-embedding-004?
++ Miễn phí (trong giới hạn quota hợp lý)
++ Dimension 768 - cân bằng giữa chất lượng và tốc độ
++ Hỗ trợ tiếng Việt tốt (multilingual)
++ task_type="retrieval_document" - tối ưu cho việc index documents
+
+Cách hoạt động:
+- API call: genai.embed_content(model="text-embedding-004", content=text, task_type="retrieval_document")
+- Input: 1 text string
+- Output: 1 vector 768 số thực (List[float])
+- Xử lý tuần tự từng text (Gemini không hỗ trợ batch native)
+- Normalize vectors để tính cosine similarity
+
+Ví dụ:
+  Text: "Bắp mỹ | 10.000đ/1 trái | 400g | /cu/bap-my"
+  Vector: [0.023, -0.145, 0.089, ..., 0.012] (768 số)
+
+Alternative providers (có thể chọn):
+- Local: sentence-transformers/all-MiniLM-L6-v2 (384 dims, miễn phí, chạy offline)
+- OpenAI: text-embedding-3-small (1536 dims, tốn phí, chất lượng cao)
+
+Bước 3: Build points cho Qdrant
+
+Mỗi point gồm:
+- id: unsigned integer (convert từ product_id hoặc hash)
+- vector: embedding 768 chiều
+- payload: metadata gốc (product_id, title, price, image_url, etc.)
+
+Ví dụ point:
+{
+  "id": 358354,
+  "vector": [0.023, -0.145, ..., 0.012],
+  "payload": {
+    "product_id": "358354",
+    "product_code": "1233020000439",
+    "title": "3 trái bắp mỹ",
+    "current_price": 24000,
+    "current_price_text": "24.000đ",
+    "unit": "24000g",
+    "image_url": "https://...",
+    "text": "3 trái bắp mỹ | 24.000đ | 24000g | /cu/..."
+  }
+}
+
+Bước 4: Insert vào Qdrant
+
+Collection config:
+- Name: bhx_products
+- Vector size: 768
+- Distance metric: Cosine (tính similarity giữa vectors)
+- Tại sao Cosine? Phù hợp với normalized embeddings, range [-1, 1]
+
+Upsert strategy:
+- Batch size: 128 points/batch (tránh overload, tối ưu tốc độ)
+- wait=True: đảm bảo data được commit trước khi tiếp tục
+- Upsert (không phải insert): tự động update nếu id đã tồn tại
+
+

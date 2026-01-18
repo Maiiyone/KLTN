@@ -1,0 +1,704 @@
+﻿ID,User Query,Ground Truth,Chatbot Response,Self Assessment,Classification,Reason
+1,Giá của Rau muống nước là bao nhiêu?,5.000đ/400g,"Chào bạn, rau muống nước hiện đang có giá 5.000đ cho 400g tại Bách Hóa Xanh nhé! Đây là loại rau rất giàu vitamin và khoáng chất, đặc biệt là vitamin A, C và sắt, rất tốt cho sức khỏe.
+
+Dưới đây là một số sản phẩm rau muống nước đang có giá tốt:
+Rau muống nước - 5.000đ/400g",Correct Answer,TP,"Chatbot trả lời đúng giá và khối lượng như mong đợi, kèm thông tin bổ ích."
+2,Củ dền xuất xứ ở đâu?,Thông tin có trong mô tả sản phẩm (VN/Trung Quốc/Thái Lan...),"Chào bạn, củ dền (hay còn gọi là củ cải đường) có nguồn gốc từ vùng Địa Trung Hải. Ban đầu, người ta chỉ sử dụng lá của nó, sau này mới phát hiện ra giá trị dinh dưỡng và hương vị của phần củ. Hiện nay, củ dền được trồng phổ biến ở nhiều nơi trên thế giới, đặc biệt là các nước ôn đới và cận nhiệt đới.
+
+Dưới đây là một số sản phẩm củ dền đang có giá tốt tại Bách Hóa Xanh:
+Củ dền 7.000đ/200g
+Củ dền 11.100đ/300g",Partially Correct,TP,"Chatbot trả lời nguồn gốc thực vật chung, không cung cấp xuất xứ sản phẩm cụ thể như mong đợi trong ngữ cảnh TMĐT."
+3,Cho tôi biết mã sản phẩm của Khoai tây củ từ 130g,2701122049200,"Chào bạn, hiện tại mình chưa có thông tin mã sản phẩm cụ thể cho Khoai tây củ từ 130g. Tuy nhiên, mình có thể cung cấp thông tin về sản phẩm này nhé.
+
+Dưới đây là một số sản phẩm Khoai tây củ từ đang có giá tốt:
+Khoai tây củ từ 130g - 15.000đ/500g",Missed / Fallback,FN,"Chatbot nói không có thông tin mã sản phẩm, không trả lời được câu hỏi chính."
+4,Cà chua bi bao nhiêu tiền?,19.000đ/300g,"Chào bạn, cà chua bi hiện đang có giá 19.000đ cho 300g nhé.
+
+Dưới đây là một số sản phẩm cà chua bi đang có giá tốt:
+Cà chua bi - 19.000đ/300g",Correct Answer,TP,Chatbot trả lời đúng trọng tâm và khớp hoàn toàn với thông tin mong đợi về giá cà chua bi.
+5,Cho tôi biết mã sản phẩm của Nấm kim châm nội địa Trung,1233934000149,"Chào bạn, Nấm kim châm là một loại nấm rất được yêu thích bởi hương vị ngọt thanh, giòn dai và giá trị dinh dưỡng cao. Nấm kim châm giàu chất xơ, vitamin nhóm B, kali, sắt, giúp hỗ trợ tiêu hóa, tăng cường miễn dịch và tốt cho tim mạch. Bạn có thể dùng nấm kim châm để nấu lẩu, xào, làm salad hoặc cuộn thịt nướng đều rất ngon và hấp dẫn.
+
+Hiện tại, Bách Hóa Xanh chưa tìm thấy sản phẩm Nấm kim châm nội địa Trung cụ thể mà bạn đang tìm. Tuy nhiên, cửa hàng đang có nhiều loại nấm nội địa Trung khác rất tươi ngon và chất lượng. Dưới đây là một số sản phẩm nấm nội địa Trung đang có giá tốt:
+Nấm đùi gà baby nội địa Trung: 20.000đ/200g
+Nấm linh chi nâu nội địa Trung: 17.000đ/150g
+Nấm linh chi trắng nội địa Trung: 17.000đ/150g
+Nấm đùi gà nội địa Trung: 26.000đ/500g (giảm 32%)
+2 gói nấm hải sản nội địa Trung: 18.000đ/2 gói 150g (giảm 31%)",Missed / Fallback,FN,"Chatbot không cung cấp mã sản phẩm được yêu cầu, chỉ nói không tìm thấy."
+6,Giá của Cải bẹ xanh là bao nhiêu?,14.900đ/300g,"Chào bạn, Cải bẹ xanh hiện đang có giá là 14.900đ cho 300g nhé.
+
+Dưới đây là một số sản phẩm Cải bẹ xanh đang có giá tốt:
+Cải bẹ xanh - 14.900đ/300g",Correct Answer,TP,Chatbot trả lời đúng giá và khối lượng sản phẩm Cải bẹ xanh như mong đợi.
+7,Bí xanh bao nhiêu tiền?,15.000đ/1 trái từ 370g trở lên,"Chào bạn, Bí xanh là một loại rau củ rất tốt cho sức khỏe, giàu vitamin C, chất xơ và ít calo, giúp thanh nhiệt, giải độc và hỗ trợ tiêu hóa rất hiệu quả đó ạ!
+
+Dưới đây là một số sản phẩm Bí xanh đang có giá tốt tại Bách Hóa Xanh:
+Bí xanh: 9.000đ/500g (đang giảm 31%)
+Bí xanh: 15.000đ/1 trái từ 370g trở lên
+Bí xanh: 9.000đ/500g (đang giảm 31%)",Correct Answer,TP,"Chatbot trả lời đúng giá và khớp với thông tin mong đợi, cung cấp thêm lựa chọn."
+8,Giá của Nấm bào ngư xám là bao nhiêu?,22.000đ/300g,"Chào bạn, Nấm bào ngư xám hiện đang có giá là 22.000đ cho 300g nhé.
+
+Dưới đây là một số sản phẩm Nấm bào ngư xám đang có giá tốt:
+Nấm bào ngư xám - 22.000đ/300g",Correct Answer,TP,"Chatbot trả lời đúng giá và khối lượng sản phẩm, khớp hoàn toàn với thông tin mong đợi."
+9,Chanh không hạt bao nhiêu tiền?,8.500đ/250g,"Chào bạn, chanh không hạt hiện đang có giá 8.500đ cho 250g nhé!
+
+Dưới đây là một số sản phẩm chanh không hạt đang có giá tốt:
+Chanh không hạt: 8.500đ/250g",Correct Answer,TP,Chatbot trả lời đúng trọng tâm và khớp hoàn toàn với thông tin mong đợi.
+10,Cho tôi biết mã sản phẩm của Củ cải trắng,2701122048800,"Chào bạn, hiện tại Bách Hóa Xanh chưa có thông tin mã sản phẩm cụ thể cho củ cải trắng. Tuy nhiên, mình có thông tin về sản phẩm củ cải trắng đang có tại cửa hàng đây ạ.
+
+Dưới đây là một số sản phẩm Củ cải trắng đang có giá tốt:
+- Củ cải trắng: 8.700đ/300g",Missed / Fallback,FN,"Chatbot không cung cấp mã sản phẩm được yêu cầu, nói không có thông tin."
+11,Giá của Củ dền là bao nhiêu?,11.100đ/300g,"Chào bạn, Củ dền hiện đang có giá như sau:
+Củ dền 200g: 7.000đ
+Củ dền 300g: 11.100đ
+
+Dưới đây là một số sản phẩm Củ dền đang có giá tốt:
+Củ dền 200g giá 7.000đ
+Củ dền 300g giá 11.100đ",Correct Answer,TP,Chatbot trả lời đúng giá củ dền 300g như mong đợi và cung cấp thêm thông tin liên quan.
+12,Cải thìa xuất xứ ở đâu?,Thông tin có trong mô tả sản phẩm (VN/Trung Quốc/Thái Lan...),"Chào bạn, cải thìa (hay còn gọi là cải bẹ trắng) có nguồn gốc từ Trung Quốc và là một loại rau rất phổ biến trong ẩm thực châu Á đó ạ. Cải thìa không chỉ dễ chế biến mà còn rất giàu vitamin A, C, K và các khoáng chất thiết yếu, rất tốt cho sức khỏe.
+
+Dưới đây là một số sản phẩm cải thìa đang có giá tốt tại Bách Hóa Xanh:
+Cải thìa: 14.900đ/300g",Correct Answer,TP,"Trả lời đúng xuất xứ cải thìa, bổ sung thông tin dinh dưỡng và gợi ý sản phẩm liên quan."
+13,Cho tôi biết mã sản phẩm của Tiêu xanh,1233020000273,"Chào bạn, rất tiếc Bách Hóa Xanh hiện chưa có thông tin mã sản phẩm cụ thể cho Tiêu xanh. Tuy nhiên, bạn có thể tìm sản phẩm này tại cửa hàng hoặc trên website/app của Bách Hóa Xanh nhé.
+
+Dưới đây là một số sản phẩm Tiêu xanh đang có giá tốt:
+Tiêu xanh - 9.500đ/50g",Missed / Fallback,FN,"Chatbot không cung cấp được mã sản phẩm, nói không có thông tin."
+14,3 trái bắp mỹ bao nhiêu tiền?,24.000đ,"Chào bạn, bắp Mỹ là một loại ngũ cốc rất ngon và bổ dưỡng đó ạ! Bắp Mỹ giàu chất xơ, vitamin nhóm B, vitamin C và các khoáng chất như magie, kali, rất tốt cho hệ tiêu hóa và cung cấp năng lượng cho cơ thể. Bạn có thể luộc, nướng, làm súp bắp hoặc xào bắp với tôm, thịt đều rất hấp dẫn.
+
+Hiện tại, Bách Hóa Xanh chưa tìm thấy sản phẩm bắp Mỹ cụ thể trong danh sách sản phẩm đang có giá tốt để báo giá cho bạn. Rất xin lỗi vì sự bất tiện này ạ. Bạn có muốn tham khảo thêm các loại rau củ tươi ngon khác không ạ?",Missed / Fallback,FN,"Chatbot không tìm thấy sản phẩm để báo giá, xin lỗi và không trả lời được câu hỏi về giá."
+15,Cho tôi biết mã sản phẩm của Bí đỏ tròn,9932844000175,"Chào bạn! Hiện tại, Bách Hóa Xanh chưa có thông tin mã sản phẩm cụ thể cho Bí đỏ tròn. Tuy nhiên, mình có thể giúp bạn tìm hiểu về sản phẩm này và các ưu đãi hiện có nhé.
+
+Dưới đây là một số sản phẩm Bí đỏ tròn đang có giá tốt:
+Bí đỏ tròn - 8.750đ/500g (đang giảm 30%)
+Bí đỏ tròn - 8.750đ/500g (đang giảm 30%)",Missed / Fallback,FN,"Chatbot nói không có mã sản phẩm, không trả lời được yêu cầu chính."
+16,Cà tím xuất xứ ở đâu?,Thông tin có trong mô tả sản phẩm (VN/Trung Quốc/Thái Lan...),"Chào bạn, rất vui được hỗ trợ bạn!
+
+Cà tím có nguồn gốc từ Ấn Độ và Sri Lanka, sau đó được du nhập và trồng phổ biến ở nhiều nơi trên thế giới, đặc biệt là các nước châu Á và Địa Trung Hải. Cà tím không chỉ là một loại rau củ quen thuộc trong bữa ăn hàng ngày mà còn rất giàu dinh dưỡng, chứa nhiều vitamin, khoáng chất và chất xơ tốt cho sức khỏe.
+
+Dưới đây là một số sản phẩm cà tím đang có giá tốt tại Bách Hóa Xanh:
+Cà tím: 14.800đ/500g",Partially Correct,TP,Trả lời nguồn gốc chung của cà tím nhưng không cung cấp xuất xứ sản phẩm cụ thể như mong đợi trong ngữ cảnh TMĐT.
+17,Giá của Rau muống nước là bao nhiêu?,5.000đ/400g,"Chào bạn, rau muống nước hiện đang có giá 5.000đ cho 400g tại Bách Hóa Xanh nhé! Đây là loại rau rất giàu vitamin và khoáng chất, đặc biệt là vitamin A, C và sắt, rất tốt cho sức khỏe.
+
+Dưới đây là một số sản phẩm rau muống nước đang có giá tốt:
+Rau muống nước - 5.000đ/400g",Correct Answer,TP,"Trả lời đúng giá và khối lượng, khớp hoàn toàn với expected."
+18,Giá của Đậu cove là bao nhiêu?,16.000đ/250g,"Chào bạn, Đậu cove hiện đang có giá là 16.000đ cho 250g nhé.
+
+Dưới đây là một số sản phẩm Đậu cove đang có giá tốt:
+Đậu cove - 16.000đ/250g",Correct Answer,TP,"Trả lời đúng giá và đơn vị sản phẩm Đậu cove, khớp hoàn toàn với thông tin mong đợi."
+19,Nấm rơm bao nhiêu tiền?,20.000đ/180-220g,"Chào bạn, nấm rơm hiện đang có giá 20.000đ cho gói 180-220g tại Bách Hóa Xanh nhé!
+
+Dưới đây là một số sản phẩm nấm rơm đang có giá tốt:
+Nấm rơm 220g: 20.000đ/180-220g (đang giảm 23%)",Correct Answer,TP,"Trả lời đúng trọng tâm, khớp hoàn toàn thông tin giá và khối lượng như expected."
+20,Giá của Dưa leo là bao nhiêu?,10.500đ/500g,"Chào bạn! Dưa leo là loại rau củ rất thanh mát và giàu nước, giúp giải nhiệt, bổ sung vitamin K, vitamin C và chất xơ rất tốt cho sức khỏe đó ạ. Về giá dưa leo, Bách Hóa Xanh có nhiều lựa chọn cho bạn đây:
+
+Dưới đây là một số sản phẩm Dưa leo đang có giá tốt:
+- Dưa leo baby từ 5-7 trái: 13.000đ/250g
+- Dưa leo: 19.000đ/1kg (đang giảm 37%)
+- Dưa leo: 10.500đ/500g (đang giảm 30%)",Correct Answer,TP,"Chatbot cung cấp chính xác giá dưa leo 10.500đ/500g như expected, kèm thêm các lựa chọn khác."
+21,Đậu bắp bao nhiêu tiền?,9.000đ/250g,"Chào bạn, Đậu bắp hiện đang có giá là 9.000đ cho 250g nhé.
+
+Dưới đây là một số sản phẩm Đậu bắp đang có giá tốt:
+Đậu bắp - 9.000đ/250g",Correct Answer,TP,Chatbot trả lời đúng trọng tâm và khớp hoàn toàn với thông tin giá và khối lượng mong đợi.
+22,Giá của Cà tím là bao nhiêu?,14.800đ/500g,"Chào bạn, Cà tím hiện đang có giá là 14.800đ/500g nhé.
+
+Dưới đây là một số sản phẩm Cà tím đang có giá tốt:
+Cà tím: 14.800đ/500g",Correct Answer,TP,Chatbot trả lời đúng trọng tâm và khớp hoàn toàn với thông tin giá mong đợi.
+23,Giá của Chanh không hạt là bao nhiêu?,8.500đ/250g,"Chào bạn! Chanh không hạt hiện đang có giá 8.500đ cho 250g tại Bách Hóa Xanh nhé. Chanh không hạt rất giàu vitamin C, giúp tăng cường sức đề kháng và làm đẹp da đó!
+
+Dưới đây là một số sản phẩm chanh không hạt đang có giá tốt:
+Chanh không hạt: 8.500đ/250g",Correct Answer,TP,"Trả lời đúng giá và khối lượng sản phẩm theo yêu cầu, khớp với thông tin mong đợi."
+24,Chanh không hạt bao nhiêu tiền?,8.500đ/250g,"Chào bạn, chanh không hạt hiện đang có giá 8.500đ cho 250g nhé!
+
+Dưới đây là một số sản phẩm chanh không hạt đang có giá tốt:
+Chanh không hạt: 8.500đ/250g",Correct Answer,TP,Chatbot trả lời đúng trọng tâm và khớp hoàn toàn với thông tin mong đợi.
+25,Cho tôi biết mã sản phẩm của Rau muống nước,1232844000831,"Chào bạn, hiện tại Bách Hóa Xanh chưa có thông tin mã sản phẩm cụ thể cho Rau muống nước. Tuy nhiên, bạn có thể tìm mua Rau muống nước với mức giá ưu đãi đặc biệt nhé!
+
+Dưới đây là một số sản phẩm Rau muống nước đang có giá tốt:
+Rau muống nước - 5.000đ/400g (giảm 66%)",Missed / Fallback,FN,"Chatbot nói không có thông tin mã sản phẩm, không trả lời được yêu cầu chính."
+26,Giá của Ớt chuông xanh-vàng-đỏ giao ngẫu nhiên là bao nhiêu?,17.500đ/250g,"Chào bạn, Ớt chuông xanh-vàng-đỏ giao ngẫu nhiên hiện có giá là 17.500đ cho 250g bạn nhé. Ớt chuông rất giàu vitamin C, A và chất chống oxy hóa, tốt cho sức khỏe tim mạch và tăng cường miễn dịch đó ạ.
+
+Dưới đây là một số sản phẩm ớt chuông đang có giá tốt:
+Ớt chuông xanh-vàng-đỏ giao ngẫu nhiên: 17.500đ/250g",Correct Answer,TP,"Trả lời đúng giá sản phẩm và khớp hoàn toàn với thông tin mong đợi, không bịa đặt."
+27,Giá của Cải thìa là bao nhiêu?,14.900đ/300g,"Chào bạn, Cải thìa hiện đang có giá là 14.900đ/300g nhé.
+
+Dưới đây là một số sản phẩm Cải thìa đang có giá tốt:
+Cải thìa - 14.900đ/300g",Correct Answer,TP,Chatbot trả lời đúng giá và khớp hoàn toàn với thông tin mong đợi.
+28,Giá của Cà chua beef là bao nhiêu?,25.000đ/500g,"Chào bạn, Cà chua beef hiện có giá 25.000đ/500g nhé.
+
+Dưới đây là một số sản phẩm Cà chua đang có giá tốt:
+Cà chua: 13.500đ/300g
+Cà chua beef: 25.000đ/500g
+Cà chua bi: 19.000đ/300g",Correct Answer,TP,Chatbot trả lời đúng trọng tâm và khớp hoàn toàn với thông tin mong đợi.
+29,Bắp mỹ bao nhiêu tiền?,10.000đ/1 trái 300-400g,"Chào bạn, bắp Mỹ là một loại ngũ cốc rất ngon và bổ dưỡng, giàu chất xơ, vitamin nhóm B và các khoáng chất tốt cho sức khỏe.
+
+Dưới đây là một số sản phẩm bắp Mỹ đang có giá tốt tại Bách Hóa Xanh:
+Bắp Mỹ tách hạt: 16.000đ/250g
+Bắp mỹ: 10.000đ/1 trái 300-400g
+3 trái bắp mỹ: 24.000đ (đang có ưu đãi giảm giá 20%)",Correct Answer,TP,"Trả lời đúng giá bắp mỹ theo expected, kèm thêm thông tin sản phẩm liên quan hữu ích."
+30,3 trái bắp mỹ bao nhiêu tiền?,24.000đ,"Chào bạn, bắp Mỹ là một loại ngũ cốc rất ngon và bổ dưỡng đó ạ! Bắp Mỹ giàu chất xơ, vitamin nhóm B, vitamin C và các khoáng chất như magie, kali, rất tốt cho hệ tiêu hóa và cung cấp năng lượng cho cơ thể. Bạn có thể luộc, nướng, làm súp bắp hoặc xào bắp với tôm, thịt đều rất hấp dẫn.
+
+Hiện tại, Bách Hóa Xanh chưa tìm thấy sản phẩm bắp Mỹ cụ thể trong danh sách sản phẩm đang có giá tốt để báo giá cho bạn. Rất xin lỗi vì sự bất tiện này ạ. Bạn có muốn tham khảo thêm các loại rau củ tươi ngon khác không ạ?",Missed / Fallback,FN,"Chatbot không tìm thấy sản phẩm để báo giá, xin lỗi và không trả lời được câu hỏi về giá."
+31,Cho tôi biết mã sản phẩm của Nấm rơm,1233934000138,"Chào bạn, rất tiếc Bách Hóa Xanh chưa có thông tin mã sản phẩm cụ thể cho Nấm rơm. Tuy nhiên, mình có thông tin về Nấm rơm đang có tại cửa hàng để bạn tham khảo đây ạ. Nấm rơm là thực phẩm giàu dinh dưỡng, chứa nhiều protein, vitamin B, D và các khoáng chất thiết yếu, rất tốt cho sức khỏe và có thể chế biến thành nhiều món ngon.
+
+Dưới đây là một số sản phẩm Nấm rơm đang có giá tốt:
+- Nấm rơm: 20.000đ/180-220g (đang giảm 23%)",Missed / Fallback,FN,"Chatbot không cung cấp mã sản phẩm được yêu cầu, mà nói không có thông tin."
+32,Củ cải trắng bao nhiêu tiền?,8.700đ/300g,"Chào bạn, củ cải trắng hiện đang có giá là 8.700đ cho 300g nhé.
+
+Dưới đây là một số sản phẩm củ cải trắng đang có giá tốt:
+Củ cải trắng - 8.700đ/300g",Correct Answer,TP,"Trả lời đúng giá và khối lượng củ cải trắng, khớp hoàn toàn với thông tin mong đợi."
+33,Đậu cove bao nhiêu tiền?,16.000đ/250g,"Chào bạn, Đậu cove hiện đang có giá là 16.000đ cho 250g nhé. Đậu cove rất giàu chất xơ, vitamin K, vitamin C và folate, rất tốt cho hệ tiêu hóa và xương khớp đó ạ.
+
+Dưới đây là một số sản phẩm Đậu cove đang có giá tốt:
+Đậu cove - 16.000đ/250g",Correct Answer,TP,Chatbot trả lời đúng giá và khối lượng sản phẩm theo thông tin mong đợi.
+34,Nấm rơm bao nhiêu tiền?,20.000đ/180-220g,"Chào bạn, nấm rơm hiện đang có giá 20.000đ cho gói 180-220g tại Bách Hóa Xanh nhé!
+
+Dưới đây là một số sản phẩm nấm rơm đang có giá tốt:
+Nấm rơm 220g: 20.000đ/180-220g (đang giảm 23%)",Correct Answer,TP,"Trả lời đúng trọng tâm, khớp hoàn toàn thông tin giá và khối lượng như expected."
+35,Tiêu xanh bao nhiêu tiền?,9.500đ/50g,"Chào bạn, tiêu xanh hiện đang có giá 9.500đ cho gói 50g nhé. Tiêu xanh không chỉ giúp món ăn thêm thơm ngon, mà còn chứa nhiều vitamin C và chất chống oxy hóa rất tốt cho sức khỏe đó ạ!
+
+Dưới đây là một số sản phẩm tiêu xanh đang có giá tốt:
+Tiêu xanh - 9.500đ/50g",Correct Answer,TP,"Trả lời đúng giá và khối lượng tiêu xanh theo expected, thông tin bổ sung hữu ích."
+36,Cho tôi biết mã sản phẩm của Bí đỏ hồ lô (1 trái),1233020000397,"Chào bạn, Bí đỏ hồ lô là một loại rau củ rất bổ dưỡng, giàu vitamin A, C, E và các khoáng chất thiết yếu, rất tốt cho mắt, da và hệ miễn dịch đó ạ.
+
+Dưới đây là một số sản phẩm Bí đỏ hồ lô đang có giá tốt tại Bách Hóa Xanh:
+Bí đỏ hồ lô (1 trái) - 16.000đ/800g (đang giảm 20%)
+Bí đỏ hồ lô (1 trái) - 20.000đ/1kg (đang giảm 20%)",Missed / Fallback,FN,"Chatbot không cung cấp mã sản phẩm được yêu cầu, thay vào đó đưa thông tin chung và danh sách sản phẩm."
+37,Bắp cải trắng xuất xứ ở đâu?,Thông tin có trong mô tả sản phẩm (VN/Trung Quốc/Thái Lan...),"Chào bạn, rất vui được hỗ trợ bạn!
+
+Bắp cải trắng có nguồn gốc từ vùng Địa Trung Hải và Tây Âu, sau đó được trồng phổ biến ở nhiều nơi trên thế giới, đặc biệt là các vùng có khí hậu ôn đới. Ở Việt Nam, bắp cải trắng được trồng nhiều ở các tỉnh miền núi phía Bắc như Đà Lạt, Sapa, Mộc Châu...
+
+Dưới đây là một số sản phẩm bắp cải đang có giá tốt tại Bách Hóa Xanh:
+Bắp cải trái tim: 12.720đ/400g
+Bắp cải tím: 20.000đ/500g
+Bắp cải thảo: 12.500đ/500g
+Bắp cải trắng: 16.000đ/800g",Partially Correct,TP,"Trả lời về nguồn gốc chung/lịch sử, không phải xuất xứ sản phẩm cụ thể như mong đợi."
+38,Giá của Bắp cải tím là bao nhiêu?,20.000đ/500g,"Chào bạn, Bắp cải tím hiện đang có giá 20.000đ cho 500g nhé.
+
+Dưới đây là một số sản phẩm Bắp cải tím đang có giá tốt:
+Bắp cải tím: 20.000đ/500g",Correct Answer,TP,Chatbot trả lời đúng trọng tâm và khớp hoàn toàn với thông tin giá sản phẩm mong đợi.
+39,Giá của Cà chua beef là bao nhiêu?,25.000đ/500g,"Chào bạn, Cà chua beef hiện có giá 25.000đ/500g nhé.
+
+Dưới đây là một số sản phẩm Cà chua đang có giá tốt:
+Cà chua: 13.500đ/300g
+Cà chua beef: 25.000đ/500g
+Cà chua bi: 19.000đ/300g",Correct Answer,TP,Chatbot trả lời đúng trọng tâm và khớp hoàn toàn với thông tin mong đợi.
+40,Cho tôi biết mã sản phẩm của Ớt hiểm,1232844000240,"Chào bạn, hiện tại mình chưa có thông tin về mã sản phẩm cụ thể của Ớt hiểm. Tuy nhiên, mình có thông tin về sản phẩm này tại Bách Hóa Xanh để bạn tham khảo nhé.
+
+Dưới đây là một số sản phẩm Ớt hiểm đang có giá tốt:
+Ớt hiểm - 5.000đ/50g",Missed / Fallback,FN,"Chatbot thừa nhận không có mã sản phẩm, không cung cấp được thông tin chính được yêu cầu."
+41,Cửa hàng có bán các loại cà chua nào?,"""Cà chua bi, Cà chua beef""","Chào bạn, Bách Hóa Xanh có nhiều loại cà chua tươi ngon, giàu vitamin C và chất chống oxy hóa lycopene, rất tốt cho sức khỏe và có thể dùng để chế biến nhiều món ăn hấp dẫn đó ạ!
+
+Dưới đây là một số sản phẩm cà chua đang có tại cửa hàng:
+Cà chua giá 13.500đ/300g
+Cà chua beef giá 25.000đ/500g
+Cà chua bi giá 19.000đ/300g",Correct Answer,TP,"Trả lời đúng các loại cà chua được hỏi và khớp với expected, kèm thông tin hữu ích."
+42,Tìm dưa leo giá dưới 20.000đ,"""Dưa leo, Dưa leo baby từ 5-7 trái""","Chào bạn, dưa leo là một loại rau củ rất tốt cho sức khỏe, giàu nước và vitamin K, giúp cấp ẩm và hỗ trợ tiêu hóa hiệu quả đó ạ!
+
+Dưới đây là một số sản phẩm dưa leo đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+Dưa leo giá 19.000đ/1kg (đang giảm 37%)
+Dưa leo giá 10.500đ/500g (đang giảm 30%)",Partially Correct,TP,"Trả lời đúng dưa leo và giá dưới 20k nhưng thiếu thông tin về ""Dưa leo baby"" theo expected."
+43,Tìm bí giá dưới 20.000đ,"""Bí đỏ tròn, Bí xanh""","Chào bạn, Bách Hóa Xanh có bí đỏ hồ lô với giá rất phải chăng, dưới 20.000đ đây ạ. Bí đỏ hồ lô rất giàu vitamin A, C và chất xơ, tốt cho mắt và hệ tiêu hóa đó!
+
+Dưới đây là một số sản phẩm bí đỏ hồ lô đang có giá tốt:
+- Bí đỏ hồ lô (1 trái) giá 16.000đ/800g",Partially Correct,TP,"Trả lời đúng giá và loại sản phẩm chung, nhưng không khớp các loại bí cụ thể trong expected."
+44,Tìm cà chua giá dưới 20.000đ,"""Cà chua bi, Cà chua beef""","Chào bạn, cà chua là một loại quả rất tốt cho sức khỏe, giàu vitamin C và chất chống oxy hóa đó. Bách Hóa Xanh có một số loại cà chua đang có giá rất phải chăng, dưới 20.000đ mà bạn đang tìm kiếm đây!
+
+Dưới đây là một số sản phẩm cà chua đang có giá tốt:
+Cà chua - 13.500đ/300g
+Cà chua bi - 19.000đ/300g",Partially Correct,TP,"Chatbot đưa ra sản phẩm đúng giá, nhưng thiếu loại cà chua beef theo expected."
+45,Cửa hàng có bán các loại cải nào?,"""Bắp cải trắng, Bắp cải thảo, Bắp cải tím""","Chào bạn, các loại cải rất tốt cho sức khỏe vì chứa nhiều vitamin, khoáng chất và chất xơ, giúp hỗ trợ tiêu hóa và tăng cường miễn dịch đó ạ.
+
+Dưới đây là một số sản phẩm cải đang có giá tốt tại Bách Hóa Xanh:
+Cải bẹ dún 400g giá 8.500đ (đang giảm 43%)
+Cải ngồng 300g giá 8.500đ (đang giảm 43%)
+Cải thìa 300g giá 14.900đ
+Cải ngọt 300g giá 8.500đ (đang giảm 43%)
+Cải bẹ xanh 300g giá 14.900đ",Hallucination / Unsupported,FP,"Chatbot liệt kê các loại cải khác hoàn toàn, không khớp với các loại bắp cải trong expected."
+46,Cửa hàng có bán các loại cải nào?,"""Bắp cải trắng, Bắp cải thảo, Bắp cải tím""","Chào bạn, các loại cải rất tốt cho sức khỏe vì chứa nhiều vitamin, khoáng chất và chất xơ, giúp hỗ trợ tiêu hóa và tăng cường miễn dịch đó ạ.
+
+Dưới đây là một số sản phẩm cải đang có giá tốt tại Bách Hóa Xanh:
+Cải bẹ dún 400g giá 8.500đ (đang giảm 43%)
+Cải ngồng 300g giá 8.500đ (đang giảm 43%)
+Cải thìa 300g giá 14.900đ
+Cải ngọt 300g giá 8.500đ (đang giảm 43%)
+Cải bẹ xanh 300g giá 14.900đ",Hallucination / Unsupported,FP,Chatbot liệt kê các loại cải khác hoàn toàn so với loại cải (bắp cải) được mong đợi trong Expected.
+47,Tìm bí giá dưới 20.000đ,"""Bí đỏ tròn, Bí xanh""","Chào bạn, Bách Hóa Xanh có bí đỏ hồ lô với giá rất phải chăng, dưới 20.000đ đây ạ. Bí đỏ hồ lô rất giàu vitamin A, C và chất xơ, tốt cho mắt và hệ tiêu hóa đó!
+
+Dưới đây là một số sản phẩm bí đỏ hồ lô đang có giá tốt:
+- Bí đỏ hồ lô (1 trái) giá 16.000đ/800g",Partially Correct,TP,"Trả lời đúng giá và loại sản phẩm chung, nhưng không khớp các loại bí cụ thể trong expected."
+48,Tìm bí giá dưới 20.000đ,"""Bí đỏ tròn, Bí xanh""","Chào bạn, Bách Hóa Xanh có bí đỏ hồ lô với giá rất phải chăng, dưới 20.000đ đây ạ. Bí đỏ hồ lô rất giàu vitamin A, C và chất xơ, tốt cho mắt và hệ tiêu hóa đó!
+
+Dưới đây là một số sản phẩm bí đỏ hồ lô đang có giá tốt:
+- Bí đỏ hồ lô (1 trái) giá 16.000đ/800g",Partially Correct,TP,"Trả lời đúng giá và loại sản phẩm chung, nhưng không khớp các loại bí cụ thể trong expected."
+49,Cửa hàng có bán các loại cải nào?,"""Bắp cải trắng, Bắp cải thảo, Bắp cải tím""","Chào bạn, các loại cải rất tốt cho sức khỏe vì chứa nhiều vitamin, khoáng chất và chất xơ, giúp hỗ trợ tiêu hóa và tăng cường miễn dịch đó ạ.
+
+Dưới đây là một số sản phẩm cải đang có giá tốt tại Bách Hóa Xanh:
+Cải bẹ dún 400g giá 8.500đ (đang giảm 43%)
+Cải ngồng 300g giá 8.500đ (đang giảm 43%)
+Cải thìa 300g giá 14.900đ
+Cải ngọt 300g giá 8.500đ (đang giảm 43%)
+Cải bẹ xanh 300g giá 14.900đ",Hallucination / Unsupported,FP,Chatbot liệt kê các loại cải khác hoàn toàn so với loại cải (bắp cải) được mong đợi trong Expected.
+50,Cửa hàng có bán các loại bí nào?,"""Bí đỏ tròn, Bí đỏ hồ lô (1 trái), Bí xanh""","Chào bạn, Bách Hóa Xanh có nhiều loại bí tươi ngon, giàu dinh dưỡng lắm ạ!
+
+Bí xanh (hay còn gọi là bí đao) rất thanh mát, giải nhiệt, giàu vitamin C và chất xơ, rất tốt cho hệ tiêu hóa và giúp đẹp da. Bạn có thể dùng bí xanh để nấu canh, luộc, xào hoặc làm mứt bí đều ngon.
+Bí đỏ non thì lại giàu vitamin A, tốt cho mắt, cùng với chất xơ và các khoáng chất thiết yếu. Bí đỏ non thường được dùng để nấu canh, xào tỏi, hoặc hấp ăn dặm cho bé cũng rất bổ dưỡng.
+
+Dưới đây là một số sản phẩm bí đang có giá tốt tại Bách Hóa Xanh:
+Bí xanh: 9.000đ/500g (giảm 31%)
+Bí xanh: 15.000đ/1 trái từ 370g trở lên
+Bí đỏ non: 13.900đ/1 trái 250-350g",Partially Correct,TP,Trả lời đúng một loại bí (bí xanh) nhưng thiếu các loại bí đỏ cụ thể trong expected.
+51,Tìm khoai giá dưới 20.000đ,"""Khoai tây củ từ 130g, Khoai lang Nhật""","Chào bạn, khoai là một thực phẩm rất tốt cho sức khỏe, cung cấp nhiều tinh bột, chất xơ và vitamin C đó. Bạn đang tìm khoai giá dưới 20.000đ đúng không ạ?
+
+Dưới đây là một số sản phẩm khoai đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+Khoai tây củ từ 130g - 15.000đ/500g",Partially Correct,TP,"Tìm được một sản phẩm đúng nhưng thiếu ""Khoai lang Nhật"" so với expected."
+52,Tìm dưa leo giá dưới 20.000đ,"""Dưa leo, Dưa leo baby từ 5-7 trái""","Chào bạn, dưa leo là một loại rau củ rất tốt cho sức khỏe, giàu nước và vitamin K, giúp cấp ẩm và hỗ trợ tiêu hóa hiệu quả đó ạ!
+
+Dưới đây là một số sản phẩm dưa leo đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+Dưa leo giá 19.000đ/1kg (đang giảm 37%)
+Dưa leo giá 10.500đ/500g (đang giảm 30%)",Correct Answer,TP,"Trả lời đúng trọng tâm tìm dưa leo dưới 20k, cung cấp sản phẩm và giá phù hợp."
+53,Cửa hàng có bán các loại bí nào?,"""Bí đỏ tròn, Bí đỏ hồ lô (1 trái), Bí xanh""","Chào bạn, Bách Hóa Xanh có nhiều loại bí tươi ngon, giàu dinh dưỡng lắm ạ!
+
+Bí xanh (hay còn gọi là bí đao) rất thanh mát, giải nhiệt, giàu vitamin C và chất xơ, rất tốt cho hệ tiêu hóa và giúp đẹp da. Bạn có thể dùng bí xanh để nấu canh, luộc, xào hoặc làm mứt bí đều ngon.
+Bí đỏ non thì lại giàu vitamin A, tốt cho mắt, cùng với chất xơ và các khoáng chất thiết yếu. Bí đỏ non thường được dùng để nấu canh, xào tỏi, hoặc hấp ăn dặm cho bé cũng rất bổ dưỡng.
+
+Dưới đây là một số sản phẩm bí đang có giá tốt tại Bách Hóa Xanh:
+Bí xanh: 9.000đ/500g (giảm 31%)
+Bí xanh: 15.000đ/1 trái từ 370g trở lên
+Bí đỏ non: 13.900đ/1 trái 250-350g",Partially Correct,TP,Trả lời đúng một loại bí (bí xanh) nhưng thiếu các loại bí đỏ cụ thể trong expected.
+54,Cửa hàng có bán các loại dưa leo nào?,"""Dưa leo, Dưa leo baby từ 5-7 trái""","Chào bạn, dưa leo là một loại rau củ rất được yêu thích bởi sự tươi mát và nhiều lợi ích cho sức khỏe đấy! Dưa leo chứa nhiều nước, giúp cấp ẩm cho cơ thể, đồng thời cung cấp vitamin K, vitamin C, kali và chất chống oxy hóa, rất tốt cho da, hệ tiêu hóa và tim mạch. Bạn có thể dùng dưa leo để ăn sống, làm salad, ép nước uống hoặc chế biến thành các món gỏi đều rất ngon.
+
+Dưới đây là một số sản phẩm dưa leo đang có giá tốt tại Bách Hóa Xanh:
+Tên sản phẩm: Dưa leo baby từ 5-7 trái - Giá: 13.000đ/250g
+Tên sản phẩm: Dưa leo - Giá: 19.000đ/1kg (giảm 37%)
+Tên sản phẩm: Dưa leo - Giá: 10.500đ/500g (giảm 30%)",Correct Answer,TP,"Chatbot liệt kê đúng và đủ các loại dưa leo có sẵn, khớp với expected. Phần giới thiệu thêm không ảnh hưởng."
+55,Tìm dưa leo giá dưới 20.000đ,"""Dưa leo, Dưa leo baby từ 5-7 trái""","Chào bạn, dưa leo là một loại rau củ rất tốt cho sức khỏe, giàu nước và vitamin K, giúp cấp ẩm và hỗ trợ tiêu hóa hiệu quả đó ạ!
+
+Dưới đây là một số sản phẩm dưa leo đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+Dưa leo giá 19.000đ/1kg (đang giảm 37%)
+Dưa leo giá 10.500đ/500g (đang giảm 30%)",Partially Correct,TP,"Trả lời đúng dưa leo và giá dưới 20k nhưng thiếu thông tin về ""Dưa leo baby"" theo expected."
+56,Cửa hàng có bán các loại bí nào?,"""Bí đỏ tròn, Bí đỏ hồ lô (1 trái), Bí xanh""","Chào bạn, Bách Hóa Xanh có nhiều loại bí tươi ngon, giàu dinh dưỡng lắm ạ!
+
+Bí xanh (hay còn gọi là bí đao) rất thanh mát, giải nhiệt, giàu vitamin C và chất xơ, rất tốt cho hệ tiêu hóa và giúp đẹp da. Bạn có thể dùng bí xanh để nấu canh, luộc, xào hoặc làm mứt bí đều ngon.
+Bí đỏ non thì lại giàu vitamin A, tốt cho mắt, cùng với chất xơ và các khoáng chất thiết yếu. Bí đỏ non thường được dùng để nấu canh, xào tỏi, hoặc hấp ăn dặm cho bé cũng rất bổ dưỡng.
+
+Dưới đây là một số sản phẩm bí đang có giá tốt tại Bách Hóa Xanh:
+Bí xanh: 9.000đ/500g (giảm 31%)
+Bí xanh: 15.000đ/1 trái từ 370g trở lên
+Bí đỏ non: 13.900đ/1 trái 250-350g",Partially Correct,TP,Trả lời đúng một loại bí (bí xanh) nhưng thiếu các loại bí đỏ cụ thể trong expected.
+57,Tìm cải giá dưới 20.000đ,"""Bắp cải trắng, Bắp cải thảo""","Chào bạn, cải là một loại rau xanh rất tốt cho sức khỏe, giàu vitamin A, C, K, chất xơ và các khoáng chất thiết yếu, giúp tăng cường hệ miễn dịch, hỗ trợ tiêu hóa và làm đẹp da đó ạ.
+
+Dưới đây là một số sản phẩm cải đang có giá tốt dưới 20.000đ tại Bách Hóa Xanh:
+Cải bẹ dún: 8.500đ/400g (giảm 43%)
+Cải ngồng: 8.500đ/300g (giảm 43%)
+Cải thìa: 14.900đ/300g
+Cải ngọt: 8.500đ/300g (giảm 43%)
+Cải bẹ xanh: 14.900đ/300g",Partially Correct,TP,Trả lời đúng trọng tâm tìm cải giá dưới 20k nhưng không khớp các loại cải cụ thể trong expected.
+58,Tìm dưa leo giá dưới 20.000đ,"""Dưa leo, Dưa leo baby từ 5-7 trái""","Chào bạn, dưa leo là một loại rau củ rất tốt cho sức khỏe, giàu nước và vitamin K, giúp cấp ẩm và hỗ trợ tiêu hóa hiệu quả đó ạ!
+
+Dưới đây là một số sản phẩm dưa leo đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+Dưa leo giá 19.000đ/1kg (đang giảm 37%)
+Dưa leo giá 10.500đ/500g (đang giảm 30%)",Partially Correct,TP,"Trả lời đúng dưa leo và giá dưới 20k nhưng thiếu thông tin về ""Dưa leo baby"" theo expected."
+59,Tìm khoai giá dưới 20.000đ,"""Khoai tây củ từ 130g, Khoai lang Nhật""","Chào bạn, khoai là một thực phẩm rất tốt cho sức khỏe, cung cấp nhiều tinh bột, chất xơ và vitamin C đó. Bạn đang tìm khoai giá dưới 20.000đ đúng không ạ?
+
+Dưới đây là một số sản phẩm khoai đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+Khoai tây củ từ 130g - 15.000đ/500g",Partially Correct,TP,"Trả lời đúng một sản phẩm nhưng thiếu ""Khoai lang Nhật"" theo expected."
+60,Cửa hàng có bán các loại cải nào?,"""Bắp cải trắng, Bắp cải thảo, Bắp cải tím""","Chào bạn, các loại cải rất tốt cho sức khỏe vì chứa nhiều vitamin, khoáng chất và chất xơ, giúp hỗ trợ tiêu hóa và tăng cường miễn dịch đó ạ.
+
+Dưới đây là một số sản phẩm cải đang có giá tốt tại Bách Hóa Xanh:
+Cải bẹ dún 400g giá 8.500đ (đang giảm 43%)
+Cải ngồng 300g giá 8.500đ (đang giảm 43%)
+Cải thìa 300g giá 14.900đ
+Cải ngọt 300g giá 8.500đ (đang giảm 43%)
+Cải bẹ xanh 300g giá 14.900đ",Hallucination / Unsupported,FP,"Chatbot liệt kê các loại cải khác hoàn toàn, không khớp với các loại bắp cải trong expected."
+61,Cửa hàng có bán các loại nấm nào?,"""Nấm kim châm nội địa Trung, Nấm hương (nấm đông cô), Nấm đùi gà nội địa Trung""","Chào bạn, nấm là một loại thực phẩm rất tốt cho sức khỏe, giàu vitamin nhóm B, khoáng chất như selen, đồng, kali và chất xơ, giúp tăng cường hệ miễn dịch và hỗ trợ tiêu hóa. Nấm có thể chế biến thành nhiều món ngon như xào, nấu canh, làm lẩu hoặc nướng đều rất hấp dẫn.
+
+Dưới đây là một số sản phẩm nấm đang có tại Bách Hóa Xanh:
+Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+Nấm đông cô gói 50g: 30.000đ/Gói 50g
+Nấm hương khô gói 50g: 32.000đ/Gói 50g
+Nấm tuyết gói 50g: 39.000đ/Gói 50g
+Nấm đùi gà baby nội địa Trung: 20.000đ/200g",Partially Correct,TP,Liệt kê đúng một số loại nấm nhưng thiếu nấm kim châm và có thêm loại khác so với expected.
+62,Cửa hàng có bán các loại nấm nào?,"""Nấm kim châm nội địa Trung, Nấm hương (nấm đông cô), Nấm đùi gà nội địa Trung""","Chào bạn, nấm là một loại thực phẩm rất tốt cho sức khỏe, giàu vitamin nhóm B, khoáng chất như selen, đồng, kali và chất xơ, giúp tăng cường hệ miễn dịch và hỗ trợ tiêu hóa. Nấm có thể chế biến thành nhiều món ngon như xào, nấu canh, làm lẩu hoặc nướng đều rất hấp dẫn.
+
+Dưới đây là một số sản phẩm nấm đang có tại Bách Hóa Xanh:
+Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+Nấm đông cô gói 50g: 30.000đ/Gói 50g
+Nấm hương khô gói 50g: 32.000đ/Gói 50g
+Nấm tuyết gói 50g: 39.000đ/Gói 50g
+Nấm đùi gà baby nội địa Trung: 20.000đ/200g",Partially Correct,TP,Liệt kê đúng một số loại nấm nhưng thiếu Nấm kim châm nội địa Trung theo expected.
+63,Cửa hàng có bán các loại khoai nào?,"""Khoai tây củ từ 130g, Khoai lang Nhật""","Chào bạn, tại Bách Hóa Xanh hiện đang có các loại khoai tây tươi, khoai tây đông lạnh tiện lợi và khoai mỡ tươi ngon đó ạ. Khoai tây rất giàu vitamin C, B6 và kali, còn khoai mỡ thì nổi bật với chất xơ và các vitamin nhóm B, rất tốt cho tiêu hóa và năng lượng.
+
+Dưới đây là một số sản phẩm khoai đang có giá tốt:
+Khoai tây đông lạnh 500g - 53.000đ/500g
+Khoai tây cắt thẳng (10mm) 1kg - 60.000đ (đang giảm 50%)
+Khoai tây cắt thẳng (10mm) 350g - 32.500đ/350g
+Khoai mỡ - 26.600đ/700g
+Canh khoai mỡ tôm - 39.000đ/400g",Hallucination / Unsupported,FP,Chatbot bịa thông tin về khoai mỡ và bỏ sót khoai lang Nhật theo expected.
+64,Cửa hàng có bán các loại bí nào?,"""Bí đỏ tròn, Bí đỏ hồ lô (1 trái), Bí xanh""","Chào bạn, Bách Hóa Xanh có nhiều loại bí tươi ngon, giàu dinh dưỡng lắm ạ!
+
+Bí xanh (hay còn gọi là bí đao) rất thanh mát, giải nhiệt, giàu vitamin C và chất xơ, rất tốt cho hệ tiêu hóa và giúp đẹp da. Bạn có thể dùng bí xanh để nấu canh, luộc, xào hoặc làm mứt bí đều ngon.
+Bí đỏ non thì lại giàu vitamin A, tốt cho mắt, cùng với chất xơ và các khoáng chất thiết yếu. Bí đỏ non thường được dùng để nấu canh, xào tỏi, hoặc hấp ăn dặm cho bé cũng rất bổ dưỡng.
+
+Dưới đây là một số sản phẩm bí đang có giá tốt tại Bách Hóa Xanh:
+Bí xanh: 9.000đ/500g (giảm 31%)
+Bí xanh: 15.000đ/1 trái từ 370g trở lên
+Bí đỏ non: 13.900đ/1 trái 250-350g",Partially Correct,TP,"Trả lời đúng một loại bí (bí xanh) nhưng thiếu các loại bí đỏ cụ thể trong expected, chỉ nêu chung ""bí đỏ non""."
+65,Cửa hàng có bán các loại cà chua nào?,"""Cà chua bi, Cà chua beef""","Chào bạn, Bách Hóa Xanh có nhiều loại cà chua tươi ngon, giàu vitamin C và chất chống oxy hóa lycopene, rất tốt cho sức khỏe và có thể dùng để chế biến nhiều món ăn hấp dẫn đó ạ!
+
+Dưới đây là một số sản phẩm cà chua đang có tại cửa hàng:
+Cà chua giá 13.500đ/300g
+Cà chua beef giá 25.000đ/500g
+Cà chua bi giá 19.000đ/300g",Correct Answer,TP,Trả lời đúng các loại cà chua được hỏi và khớp với thông tin mong đợi.
+66,Cửa hàng có bán các loại nấm nào?,"""Nấm kim châm nội địa Trung, Nấm hương (nấm đông cô), Nấm đùi gà nội địa Trung""","Chào bạn, nấm là một loại thực phẩm rất tốt cho sức khỏe, giàu vitamin nhóm B, khoáng chất như selen, đồng, kali và chất xơ, giúp tăng cường hệ miễn dịch và hỗ trợ tiêu hóa. Nấm có thể chế biến thành nhiều món ngon như xào, nấu canh, làm lẩu hoặc nướng đều rất hấp dẫn.
+
+Dưới đây là một số sản phẩm nấm đang có tại Bách Hóa Xanh:
+Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+Nấm đông cô gói 50g: 30.000đ/Gói 50g
+Nấm hương khô gói 50g: 32.000đ/Gói 50g
+Nấm tuyết gói 50g: 39.000đ/Gói 50g
+Nấm đùi gà baby nội địa Trung: 20.000đ/200g",Partially Correct,TP,Liệt kê đúng một số loại nấm nhưng thiếu nấm kim châm và có thêm loại khác so với expected.
+67,Tìm cải giá dưới 20.000đ,"""Bắp cải trắng, Bắp cải thảo""","Chào bạn, cải là một loại rau xanh rất tốt cho sức khỏe, giàu vitamin A, C, K, chất xơ và các khoáng chất thiết yếu, giúp tăng cường hệ miễn dịch, hỗ trợ tiêu hóa và làm đẹp da đó ạ.
+
+Dưới đây là một số sản phẩm cải đang có giá tốt dưới 20.000đ tại Bách Hóa Xanh:
+Cải bẹ dún: 8.500đ/400g (giảm 43%)
+Cải ngồng: 8.500đ/300g (giảm 43%)
+Cải thìa: 14.900đ/300g
+Cải ngọt: 8.500đ/300g (giảm 43%)
+Cải bẹ xanh: 14.900đ/300g",Partially Correct,TP,"Trả lời đúng giá và loại rau cải, nhưng không khớp hoàn toàn các loại cải cụ thể trong expected."
+68,Tìm khoai giá dưới 20.000đ,"""Khoai tây củ từ 130g, Khoai lang Nhật""","Chào bạn, khoai là một thực phẩm rất tốt cho sức khỏe, cung cấp nhiều tinh bột, chất xơ và vitamin C đó. Bạn đang tìm khoai giá dưới 20.000đ đúng không ạ?
+
+Dưới đây là một số sản phẩm khoai đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+Khoai tây củ từ 130g - 15.000đ/500g",Partially Correct,TP,"Tìm được một sản phẩm đúng nhưng thiếu ""Khoai lang Nhật"" so với expected."
+69,Cửa hàng có bán các loại cà chua nào?,"""Cà chua bi, Cà chua beef""","Chào bạn, Bách Hóa Xanh có nhiều loại cà chua tươi ngon, giàu vitamin C và chất chống oxy hóa lycopene, rất tốt cho sức khỏe và có thể dùng để chế biến nhiều món ăn hấp dẫn đó ạ!
+
+Dưới đây là một số sản phẩm cà chua đang có tại cửa hàng:
+Cà chua giá 13.500đ/300g
+Cà chua beef giá 25.000đ/500g
+Cà chua bi giá 19.000đ/300g",Correct Answer,TP,"Trả lời đúng các loại cà chua được hỏi và khớp với expected, kèm thông tin hữu ích."
+70,Cửa hàng có bán các loại cà chua nào?,"""Cà chua bi, Cà chua beef""","Chào bạn, Bách Hóa Xanh có nhiều loại cà chua tươi ngon, giàu vitamin C và chất chống oxy hóa lycopene, rất tốt cho sức khỏe và có thể dùng để chế biến nhiều món ăn hấp dẫn đó ạ!
+
+Dưới đây là một số sản phẩm cà chua đang có tại cửa hàng:
+Cà chua giá 13.500đ/300g
+Cà chua beef giá 25.000đ/500g
+Cà chua bi giá 19.000đ/300g",Correct Answer,TP,Trả lời đúng các loại cà chua được hỏi và khớp với thông tin mong đợi.
+71,Tìm cà chua giá dưới 20.000đ,"""Cà chua bi, Cà chua beef""","Chào bạn, cà chua là một loại quả rất tốt cho sức khỏe, giàu vitamin C và chất chống oxy hóa đó. Bách Hóa Xanh có một số loại cà chua đang có giá rất phải chăng, dưới 20.000đ mà bạn đang tìm kiếm đây!
+
+Dưới đây là một số sản phẩm cà chua đang có giá tốt:
+Cà chua - 13.500đ/300g
+Cà chua bi - 19.000đ/300g",Partially Correct,TP,"Chatbot đưa ra sản phẩm đúng giá, nhưng thiếu loại cà chua beef theo expected."
+72,Cửa hàng có bán các loại cải nào?,"""Bắp cải trắng, Bắp cải thảo, Bắp cải tím""","Chào bạn, các loại cải rất tốt cho sức khỏe vì chứa nhiều vitamin, khoáng chất và chất xơ, giúp hỗ trợ tiêu hóa và tăng cường miễn dịch đó ạ.
+
+Dưới đây là một số sản phẩm cải đang có giá tốt tại Bách Hóa Xanh:
+Cải bẹ dún 400g giá 8.500đ (đang giảm 43%)
+Cải ngồng 300g giá 8.500đ (đang giảm 43%)
+Cải thìa 300g giá 14.900đ
+Cải ngọt 300g giá 8.500đ (đang giảm 43%)
+Cải bẹ xanh 300g giá 14.900đ",Hallucination / Unsupported,FP,"Chatbot liệt kê các loại cải khác hoàn toàn, không khớp với các loại bắp cải trong expected."
+73,Tìm ớt giá dưới 20.000đ,"""Ớt chuông xanh-vàng-đỏ giao ngẫu nhiên, Ớt hiểm""","Chào bạn, ớt không chỉ giúp món ăn thêm phần hấp dẫn, cay nồng mà còn chứa nhiều vitamin C và các chất chống oxy hóa, rất tốt cho sức khỏe đó ạ!
+
+Dưới đây là một số sản phẩm ớt đang có giá tốt:
+- Ớt xiêm xanh: 7.000đ/50g
+- Ớt hiểm: 5.000đ/50g",Partially Correct,TP,"Trả lời đúng giá và một phần sản phẩm, nhưng thiếu ớt chuông theo expected."
+74,Cửa hàng có bán các loại bí nào?,"""Bí đỏ tròn, Bí đỏ hồ lô (1 trái), Bí xanh""","Chào bạn, Bách Hóa Xanh có nhiều loại bí tươi ngon, giàu dinh dưỡng lắm ạ!
+
+Bí xanh (hay còn gọi là bí đao) rất thanh mát, giải nhiệt, giàu vitamin C và chất xơ, rất tốt cho hệ tiêu hóa và giúp đẹp da. Bạn có thể dùng bí xanh để nấu canh, luộc, xào hoặc làm mứt bí đều ngon.
+Bí đỏ non thì lại giàu vitamin A, tốt cho mắt, cùng với chất xơ và các khoáng chất thiết yếu. Bí đỏ non thường được dùng để nấu canh, xào tỏi, hoặc hấp ăn dặm cho bé cũng rất bổ dưỡng.
+
+Dưới đây là một số sản phẩm bí đang có giá tốt tại Bách Hóa Xanh:
+Bí xanh: 9.000đ/500g (giảm 31%)
+Bí xanh: 15.000đ/1 trái từ 370g trở lên
+Bí đỏ non: 13.900đ/1 trái 250-350g",Partially Correct,TP,Trả lời đúng một loại bí (bí xanh) nhưng thiếu các loại bí đỏ cụ thể trong expected.
+75,Tìm ớt giá dưới 20.000đ,"""Ớt chuông xanh-vàng-đỏ giao ngẫu nhiên, Ớt hiểm""","Ớt không chỉ giúp món ăn thêm phần hấp dẫn, cay nồng mà còn chứa nhiều vitamin C và các chất chống oxy hóa, rất tốt cho sức khỏe đó ạ!
+
+Dưới đây là một số sản phẩm ớt đang có giá tốt tại Bách Hóa Xanh:
+- Ớt xiêm xanh: 7.000đ/50g
+- Ớt hiểm: 5.000đ/50g",Partially Correct,TP,"Trả lời đúng loại sản phẩm và lọc giá, nhưng thiếu một số sản phẩm mong đợi và có thông tin thừa."
+76,Món gì nấu canh chua ngon?,"""Gợi ý: Cà chua, Thơm, Đậu bắp, Bạc hà, Giá""","Chào bạn, để nấu một nồi canh chua ngon chuẩn vị, bạn có thể tham khảo các nguyên liệu sau nhé:
+
+*   **Nguyên liệu chính (chọn 1 trong các loại):** Cá (cá lóc, cá diêu hồng, cá basa), tôm, sườn non hoặc thịt gà.
+*   **Vị chua:** Me vắt (hoặc nước cốt me), cà chua, dứa (thơm).
+*   **Rau củ:** Bạc hà (dọc mùng), đậu bắp, giá đỗ, hành tây.
+*   **Gia vị và rau thơm:** Tỏi băm, ớt, ngò gai, rau om (ngổ), hành lá, nước mắm, đường, muối, dầu ăn.
+
+Với những nguyên liệu này, bạn có thể biến tấu thành nhiều món canh chua hấp dẫn như canh chua cá lóc, canh chua tôm, canh chua sườn non...
+
+Hiện tại, Bách Hóa Xanh chưa tìm thấy các sản phẩm nguyên liệu canh chua cụ thể đang có sẵn để gợi ý cho bạn. Rất mong bạn thông cảm nhé!",Correct Answer,TP,"Trả lời đúng trọng tâm, đầy đủ các nguyên liệu nấu canh chua và bao gồm tất cả gợi ý từ expected."
+77,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây""","Chào bạn! Để làm món salad trộn dầu giấm thơm ngon, bạn có thể chuẩn bị các nguyên liệu sau nhé:
+
+*   **Rau xanh:** Xà lách (xà lách lolo xanh, xà lách xoăn, xà lách mỡ), rau cải mầm, rau rocket...
+*   **Rau củ khác:** Cà chua bi, dưa chuột, hành tây thái mỏng, ớt chuông (xanh, đỏ, vàng), bắp cải tím thái sợi.
+*   **Thực phẩm bổ sung protein (tùy chọn):** Ức gà luộc/áp chảo xé sợi, trứng gà luộc, tôm luộc, cá ngừ đóng hộp, đậu phụ chiên.
+*   **Gia vị và sốt dầu giấm:** Dầu ô liu nguyên chất, giấm táo hoặc giấm gạo, đường, muối, tiêu xay, tỏi băm nhỏ (tùy thích), một ít mù tạt vàng (Dijon mustard) để tăng hương vị.
+*   **Topping (tùy chọn):** Bánh mì crouton, các loại hạt (hạt óc chó, hạt điều), phô mai bào sợi.
+
+Dưới đây là một số sản phẩm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+*   HaiDuong - 111211.0đ/gam (giảm 20%)
+*   Nấm mèo đen thái sợi 50g - 16.000đ/Gói 50g
+*   Nấm đông cô gói 50g - 30.000đ/Gói 50g",Partially Correct,TP,"Liệt kê nguyên liệu đúng và đầy đủ, nhưng gợi ý sản phẩm cuối cùng không liên quan và có thông tin sai/bịa."
+78,Rau củ nào tốt cho người ăn kiêng?,"""Gợi ý: Dưa leo, Cà chua, Xà lách, Bí xanh""","Chào bạn, với vai trò là chuyên gia dinh dưỡng của Bách Hóa Xanh, mình rất vui được tư vấn cho bạn về các loại rau củ tốt cho người ăn kiêng nhé!
+
+Rau củ là lựa chọn tuyệt vời cho chế độ ăn kiêng vì chúng thường có lượng calo thấp, giàu chất xơ, vitamin và khoáng chất, giúp bạn no lâu hơn mà không nạp quá nhiều năng lượng. Một số loại rau củ đặc biệt tốt bao gồm:
+- Rau xanh đậm: Bông cải xanh, cải bó xôi, cải xoăn, rau muống... Chúng giàu chất xơ, vitamin K, C và folate.
+- Các loại củ ít tinh bột: Bắp cải, súp lơ trắng, dưa chuột, cà chua, ớt chuông... Giúp bổ sung nước và vitamin mà không tăng đường huyết.
+- Nấm: Nấm hương, nấm rơm, nấm kim châm... Cung cấp protein thực vật và chất xơ, ít calo.
+
+Dưới đây là một số sản phẩm rau củ đang có tại Bách Hóa Xanh mà bạn có thể tham khảo:
+Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+Nấm đông cô gói 50g: 30.000đ/Gói 50g",Correct Answer,TP,"Trả lời đúng trọng tâm, cung cấp danh sách rau củ đa dạng, chính xác và bao gồm các gợi ý từ expected."
+79,Rau củ nào tốt cho người ăn kiêng?,"""Gợi ý: Dưa leo, Cà chua, Xà lách, Bí xanh""","Chào bạn, rất vui được hỗ trợ bạn trong hành trình ăn kiêng khỏe mạnh!
+
+Rau củ là lựa chọn tuyệt vời cho người ăn kiêng vì chúng thường chứa rất ít calo nhưng lại giàu chất xơ, vitamin và khoáng chất thiết yếu. Chất xơ giúp bạn cảm thấy no lâu hơn, hỗ trợ tiêu hóa và ổn định đường huyết, rất quan trọng trong việc kiểm soát cân nặng.
+
+Một số loại rau củ đặc biệt tốt cho người ăn kiêng bao gồm:
+-   **Các loại rau lá xanh đậm:** Cải bó xôi, cải xoăn, rau diếp, xà lách... Chúng rất giàu vitamin K, A, C và chất xơ.
+-   **Bông cải xanh và súp lơ trắng:** Cung cấp nhiều chất xơ, vitamin C và các hợp chất chống oxy hóa.
+-   **Dưa chuột và cà chua:** Chứa nhiều nước, ít calo, giúp cấp nước và tạo cảm giác no.
+-   **Ớt chuông:** Giàu vitamin C và chất chống oxy hóa, có thể giúp tăng cường trao đổi chất.
+-   **Bí đao, bí xanh:** Rất ít calo, nhiều nước, thích hợp cho các món canh, luộc.
+-   **Nấm các loại:** Ít calo, giàu protein thực vật và chất xơ, là nguồn thay thế thịt tuyệt vời.
+
+Dưới đây là một số sản phẩm nấm và rau củ đang có tại Bách Hóa Xanh mà bạn có thể tham khảo:
+Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+Nấm đông cô gói 50g: 30.000đ/Gói 50g",Correct Answer,TP,"Trả lời đúng trọng tâm, cung cấp danh sách rau củ phù hợp và giải thích lợi ích, bao gồm các mục trong expected."
+80,Tư vấn nguyên liệu nấu lẩu thái,"""Gợi ý: Nấm kim châm, Cải thảo, Đậu bắp, Cà chua, Sả cây""","Chào bạn, để nấu một nồi lẩu Thái chua cay chuẩn vị, bạn cần chuẩn bị các nguyên liệu sau nhé:
+
+Phần nước lẩu:
+*   Gia vị lẩu Thái (có thể mua gói gia vị làm sẵn hoặc tự làm từ sả, riềng, lá chanh, ớt, hành tím, cà chua, me).
+*   Nước dùng xương hoặc nước dừa tươi để tạo độ ngọt tự nhiên.
+
+Nguyên liệu nhúng lẩu:
+*   Hải sản: Tôm, mực, nghêu, cá viên, chả cá.
+*   Thịt: Thịt bò thái lát mỏng, thịt gà.
+*   Rau ăn kèm: Nấm rơm, nấm kim châm, nấm đùi gà, cải thảo, rau muống, bắp cải, cà chua, bạc hà (dọc mùng).
+*   Đồ ăn kèm: Bún tươi, mì gói, đậu phụ.
+
+Dưới đây là một số sản phẩm nấm đang có tại Bách Hóa Xanh mà bạn có thể dùng để nhúng lẩu:
+*   Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+*   Nấm đông cô gói 50g: 30.000đ/Gói 50g",Partially Correct,TP,Trả lời đầy đủ và đúng nhưng thiếu một nguyên liệu (Đậu bắp) trong danh sách gợi ý.
+81,Tư vấn nguyên liệu nấu lẩu thái,"""Gợi ý: Nấm kim châm, Cải thảo, Đậu bắp, Cà chua, Sả cây""","Chào bạn, để nấu một nồi lẩu Thái chua cay chuẩn vị, bạn cần chuẩn bị các nguyên liệu sau nhé:
+
+Phần nước lẩu:
+*   Gia vị lẩu Thái (có thể mua gói gia vị làm sẵn hoặc tự làm từ sả, riềng, lá chanh, ớt, hành tím, cà chua, me).
+*   Nước dùng xương hoặc nước dừa tươi để tạo độ ngọt tự nhiên.
+
+Nguyên liệu nhúng lẩu:
+*   Hải sản: Tôm, mực, nghêu, cá viên, chả cá.
+*   Thịt: Thịt bò thái lát mỏng, thịt gà.
+*   Rau ăn kèm: Nấm rơm, nấm kim châm, nấm đùi gà, cải thảo, rau muống, bắp cải, cà chua, bạc hà (dọc mùng).
+*   Đồ ăn kèm: Bún tươi, mì gói, đậu phụ.
+
+Dưới đây là một số sản phẩm nấm đang có tại Bách Hóa Xanh mà bạn có thể dùng để nhúng lẩu:
+*   Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+*   Nấm đông cô gói 50g: 30.000đ/Gói 50g",Partially Correct,TP,Trả lời đầy đủ và đúng nhưng thiếu một nguyên liệu (Đậu bắp) trong danh sách gợi ý.
+82,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây""","Chào bạn! Để làm món salad trộn dầu giấm thơm ngon, bạn có thể chuẩn bị các nguyên liệu sau nhé:
+
+*   **Rau xanh:** Xà lách (xà lách lolo xanh, xà lách xoăn, xà lách mỡ), rau cải mầm, rau rocket...
+*   **Rau củ khác:** Cà chua bi, dưa chuột, hành tây thái mỏng, ớt chuông (xanh, đỏ, vàng), bắp cải tím thái sợi.
+*   **Thực phẩm bổ sung protein (tùy chọn):** Ức gà luộc/áp chảo xé sợi, trứng gà luộc, tôm luộc, cá ngừ đóng hộp, đậu phụ chiên.
+*   **Gia vị và sốt dầu giấm:** Dầu ô liu nguyên chất, giấm táo hoặc giấm gạo, đường, muối, tiêu xay, tỏi băm nhỏ (tùy thích), một ít mù tạt vàng (Dijon mustard) để tăng hương vị.
+*   **Topping (tùy chọn):** Bánh mì crouton, các loại hạt (hạt óc chó, hạt điều), phô mai bào sợi.
+
+Dưới đây là một số sản phẩm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+*   HaiDuong - 111211.0đ/gam (giảm 20%)
+*   Nấm mèo đen thái sợi 50g - 16.000đ/Gói 50g
+*   Nấm đông cô gói 50g - 30.000đ/Gói 50g",Hallucination / Unsupported,FP,Gợi ý sản phẩm có thông tin sai lệch (giá vô lý) và không phù hợp với yêu cầu làm salad.
+83,Có combo nấm nào tiết kiệm không?,"""Gợi ý: Combo 3 gói nấm kim châm, Combo nấm lẩu""","Chào bạn! Nấm là một lựa chọn tuyệt vời cho bữa ăn vừa ngon miệng, bổ dưỡng lại còn tiết kiệm nữa đó. Để có một combo nấm tiết kiệm, bạn có thể kết hợp các loại nấm tươi và nấm khô để món ăn thêm phong phú về hương vị và kết cấu, mà chi phí lại rất phải chăng. Nấm có thể chế biến thành nhiều món ngon như xào, nấu canh, làm lẩu hoặc kho chay đều rất hấp dẫn.
+
+Dưới đây là một số sản phẩm nấm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo để tạo combo tiết kiệm của mình nhé:
+Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+Nấm đùi gà baby nội địa Trung: 20.000đ/200g
+Nấm đông cô gói 50g: 30.000đ/Gói 50g
+Nấm hương khô gói 50g: 32.000đ/Gói 50g
+Nấm tuyết gói 50g: 39.000đ/Gói 50g",Partially Correct,TP,"Trả lời về nấm tiết kiệm và liệt kê sản phẩm lẻ, nhưng không đưa ra các ""combo nấm"" cụ thể như yêu cầu."
+84,Tư vấn nguyên liệu nấu lẩu thái,"""Gợi ý: Nấm kim châm, Cải thảo, Đậu bắp, Cà chua, Sả cây""","Chào bạn, để nấu một nồi lẩu Thái chua cay chuẩn vị, bạn cần chuẩn bị các nguyên liệu sau nhé:
+
+Phần nước lẩu:
+*   Gia vị lẩu Thái (có thể mua gói gia vị làm sẵn hoặc tự làm từ sả, riềng, lá chanh, ớt, hành tím, cà chua, me).
+*   Nước dùng xương hoặc nước dừa tươi để tạo độ ngọt tự nhiên.
+
+Nguyên liệu nhúng lẩu:
+*   Hải sản: Tôm, mực, nghêu, cá viên, chả cá.
+*   Thịt: Thịt bò thái lát mỏng, thịt gà.
+*   Rau ăn kèm: Nấm rơm, nấm kim châm, nấm đùi gà, cải thảo, rau muống, bắp cải, cà chua, bạc hà (dọc mùng).
+*   Đồ ăn kèm: Bún tươi, mì gói, đậu phụ.
+
+Dưới đây là một số sản phẩm nấm đang có tại Bách Hóa Xanh mà bạn có thể dùng để nhúng lẩu:
+*   Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+*   Nấm đông cô gói 50g: 30.000đ/Gói 50g",Partially Correct,TP,Trả lời đầy đủ và đúng nhưng thiếu một nguyên liệu (Đậu bắp) trong danh sách gợi ý.
+85,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây""","Chào bạn! Để làm món salad trộn dầu giấm thơm ngon, bạn có thể chuẩn bị các nguyên liệu sau nhé:
+
+*   **Rau xanh:** Xà lách (xà lách lolo xanh, xà lách xoăn, xà lách mỡ), rau cải mầm, rau rocket...
+*   **Rau củ khác:** Cà chua bi, dưa chuột, hành tây thái mỏng, ớt chuông (xanh, đỏ, vàng), bắp cải tím thái sợi.
+*   **Thực phẩm bổ sung protein (tùy chọn):** Ức gà luộc/áp chảo xé sợi, trứng gà luộc, tôm luộc, cá ngừ đóng hộp, đậu phụ chiên.
+*   **Gia vị và sốt dầu giấm:** Dầu ô liu nguyên chất, giấm táo hoặc giấm gạo, đường, muối, tiêu xay, tỏi băm nhỏ (tùy thích), một ít mù tạt vàng (Dijon mustard) để tăng hương vị.
+*   **Topping (tùy chọn):** Bánh mì crouton, các loại hạt (hạt óc chó, hạt điều), phô mai bào sợi.
+
+Dưới đây là một số sản phẩm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+*   HaiDuong - 111211.0đ/gam (giảm 20%)
+*   Nấm mèo đen thái sợi 50g - 16.000đ/Gói 50g
+*   Nấm đông cô gói 50g - 30.000đ/Gói 50g",Hallucination / Unsupported,FP,Gợi ý sản phẩm có thông tin sai lệch (giá vô lý) và không phù hợp với yêu cầu làm salad.
+86,Món gì nấu canh chua ngon?,"""Gợi ý: Cà chua, Thơm, Đậu bắp, Bạc hà, Giá""","Chào bạn, để nấu một nồi canh chua ngon chuẩn vị, bạn có thể tham khảo các nguyên liệu sau nhé:
+
+*   **Nguyên liệu chính (chọn 1 trong các loại):** Cá (cá lóc, cá diêu hồng, cá basa), tôm, sườn non hoặc thịt gà.
+*   **Vị chua:** Me vắt (hoặc nước cốt me), cà chua, dứa (thơm).
+*   **Rau củ:** Bạc hà (dọc mùng), đậu bắp, giá đỗ, hành tây.
+*   **Gia vị và rau thơm:** Tỏi băm, ớt, ngò gai, rau om (ngổ), hành lá, nước mắm, đường, muối, dầu ăn.
+
+Với những nguyên liệu này, bạn có thể biến tấu thành nhiều món canh chua hấp dẫn như canh chua cá lóc, canh chua tôm, canh chua sườn non...
+
+Hiện tại, Bách Hóa Xanh chưa tìm thấy các sản phẩm nguyên liệu canh chua cụ thể đang có sẵn để gợi ý cho bạn. Rất mong bạn thông cảm nhé!",Correct Answer,TP,"Trả lời đúng trọng tâm, liệt kê đầy đủ nguyên liệu theo yêu cầu và khớp với expected."
+87,Tư vấn nguyên liệu nấu lẩu thái,"""Gợi ý: Nấm kim châm, Cải thảo, Đậu bắp, Cà chua, Sả cây""","Chào bạn, để nấu một nồi lẩu Thái chua cay chuẩn vị, bạn cần chuẩn bị các nguyên liệu sau nhé:
+
+Phần nước lẩu:
+*   Gia vị lẩu Thái (có thể mua gói gia vị làm sẵn hoặc tự làm từ sả, riềng, lá chanh, ớt, hành tím, cà chua, me).
+*   Nước dùng xương hoặc nước dừa tươi để tạo độ ngọt tự nhiên.
+
+Nguyên liệu nhúng lẩu:
+*   Hải sản: Tôm, mực, nghêu, cá viên, chả cá.
+*   Thịt: Thịt bò thái lát mỏng, thịt gà.
+*   Rau ăn kèm: Nấm rơm, nấm kim châm, nấm đùi gà, cải thảo, rau muống, bắp cải, cà chua, bạc hà (dọc mùng).
+*   Đồ ăn kèm: Bún tươi, mì gói, đậu phụ.
+
+Dưới đây là một số sản phẩm nấm đang có tại Bách Hóa Xanh mà bạn có thể dùng để nhúng lẩu:
+*   Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+*   Nấm đông cô gói 50g: 30.000đ/Gói 50g",Correct Answer,TP,"Trả lời đúng trọng tâm, cung cấp danh sách nguyên liệu đầy đủ, bao gồm hầu hết gợi ý."
+88,Có combo nấm nào tiết kiệm không?,"""Gợi ý: Combo 3 gói nấm kim châm, Combo nấm lẩu""","Chào bạn! Nấm là một lựa chọn tuyệt vời cho bữa ăn vừa ngon miệng, bổ dưỡng lại còn tiết kiệm nữa đó. Để có một combo nấm tiết kiệm, bạn có thể kết hợp các loại nấm tươi và nấm khô để món ăn thêm phong phú về hương vị và kết cấu, mà chi phí lại rất phải chăng. Nấm có thể chế biến thành nhiều món ngon như xào, nấu canh, làm lẩu hoặc kho chay đều rất hấp dẫn.
+
+Dưới đây là một số sản phẩm nấm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo để tạo combo tiết kiệm của mình nhé:
+Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+Nấm đùi gà baby nội địa Trung: 20.000đ/200g
+Nấm đông cô gói 50g: 30.000đ/Gói 50g
+Nấm hương khô gói 50g: 32.000đ/Gói 50g
+Nấm tuyết gói 50g: 39.000đ/Gói 50g",Partially Correct,TP,"Trả lời về nấm tiết kiệm và liệt kê sản phẩm lẻ, nhưng không đưa ra các ""combo nấm"" cụ thể như yêu cầu."
+89,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây""","Chào bạn! Để làm món salad trộn dầu giấm thơm ngon, bạn có thể chuẩn bị các nguyên liệu sau nhé:
+
+*   **Rau xanh:** Xà lách (xà lách lolo xanh, xà lách xoăn, xà lách mỡ), rau cải mầm, rau rocket...
+*   **Rau củ khác:** Cà chua bi, dưa chuột, hành tây thái mỏng, ớt chuông (xanh, đỏ, vàng), bắp cải tím thái sợi.
+*   **Thực phẩm bổ sung protein (tùy chọn):** Ức gà luộc/áp chảo xé sợi, trứng gà luộc, tôm luộc, cá ngừ đóng hộp, đậu phụ chiên.
+*   **Gia vị và sốt dầu giấm:** Dầu ô liu nguyên chất, giấm táo hoặc giấm gạo, đường, muối, tiêu xay, tỏi băm nhỏ (tùy thích), một ít mù tạt vàng (Dijon mustard) để tăng hương vị.
+*   **Topping (tùy chọn):** Bánh mì crouton, các loại hạt (hạt óc chó, hạt điều), phô mai bào sợi.
+
+Dưới đây là một số sản phẩm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+*   HaiDuong - 111211.0đ/gam (giảm 20%)
+*   Nấm mèo đen thái sợi 50g - 16.000đ/Gói 50g
+*   Nấm đông cô gói 50g - 30.000đ/Gói 50g",Partially Correct,TP,"Liệt kê nguyên liệu đúng và đầy đủ, nhưng gợi ý sản phẩm cuối cùng không liên quan và có thông tin sai/bịa."
+90,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây""","Chào bạn! Để làm món salad trộn dầu giấm thơm ngon, bạn có thể chuẩn bị các nguyên liệu sau nhé:
+
+*   **Rau xanh:** Xà lách (xà lách lolo xanh, xà lách xoăn, xà lách mỡ), rau cải mầm, rau rocket...
+*   **Rau củ khác:** Cà chua bi, dưa chuột, hành tây thái mỏng, ớt chuông (xanh, đỏ, vàng), bắp cải tím thái sợi.
+*   **Thực phẩm bổ sung protein (tùy chọn):** Ức gà luộc/áp chảo xé sợi, trứng gà luộc, tôm luộc, cá ngừ đóng hộp, đậu phụ chiên.
+*   **Gia vị và sốt dầu giấm:** Dầu ô liu nguyên chất, giấm táo hoặc giấm gạo, đường, muối, tiêu xay, tỏi băm nhỏ (tùy thích), một ít mù tạt vàng (Dijon mustard) để tăng hương vị.
+*   **Topping (tùy chọn):** Bánh mì crouton, các loại hạt (hạt óc chó, hạt điều), phô mai bào sợi.
+
+Dưới đây là một số sản phẩm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+*   HaiDuong - 111211.0đ/gam (giảm 20%)
+*   Nấm mèo đen thái sợi 50g - 16.000đ/Gói 50g
+*   Nấm đông cô gói 50g - 30.000đ/Gói 50g",Hallucination / Unsupported,FP,Gợi ý sản phẩm có thông tin sai lệch (giá vô lý) và không phù hợp với yêu cầu làm salad.
+91,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây""","Chào bạn! Để làm món salad trộn dầu giấm thơm ngon, bạn có thể chuẩn bị các nguyên liệu sau nhé:
+
+*   **Rau xanh:** Xà lách (xà lách lolo xanh, xà lách xoăn, xà lách mỡ), rau cải mầm, rau rocket...
+*   **Rau củ khác:** Cà chua bi, dưa chuột, hành tây thái mỏng, ớt chuông (xanh, đỏ, vàng), bắp cải tím thái sợi.
+*   **Thực phẩm bổ sung protein (tùy chọn):** Ức gà luộc/áp chảo xé sợi, trứng gà luộc, tôm luộc, cá ngừ đóng hộp, đậu phụ chiên.
+*   **Gia vị và sốt dầu giấm:** Dầu ô liu nguyên chất, giấm táo hoặc giấm gạo, đường, muối, tiêu xay, tỏi băm nhỏ (tùy thích), một ít mù tạt vàng (Dijon mustard) để tăng hương vị.
+*   **Topping (tùy chọn):** Bánh mì crouton, các loại hạt (hạt óc chó, hạt điều), phô mai bào sợi.
+
+Dưới đây là một số sản phẩm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+*   HaiDuong - 111211.0đ/gam (giảm 20%)
+*   Nấm mèo đen thái sợi 50g - 16.000đ/Gói 50g
+*   Nấm đông cô gói 50g - 30.000đ/Gói 50g",Hallucination / Unsupported,FP,Gợi ý sản phẩm có thông tin sai lệch (giá vô lý) và không phù hợp với yêu cầu làm salad.
+92,Món gì nấu canh chua ngon?,"""Gợi ý: Cà chua, Thơm, Đậu bắp, Bạc hà, Giá""","Chào bạn, để nấu một nồi canh chua ngon chuẩn vị, bạn có thể tham khảo các nguyên liệu sau nhé:
+
+*   **Nguyên liệu chính (chọn 1 trong các loại):** Cá (cá lóc, cá diêu hồng, cá basa), tôm, sườn non hoặc thịt gà.
+*   **Vị chua:** Me vắt (hoặc nước cốt me), cà chua, dứa (thơm).
+*   **Rau củ:** Bạc hà (dọc mùng), đậu bắp, giá đỗ, hành tây.
+*   **Gia vị và rau thơm:** Tỏi băm, ớt, ngò gai, rau om (ngổ), hành lá, nước mắm, đường, muối, dầu ăn.
+
+Với những nguyên liệu này, bạn có thể biến tấu thành nhiều món canh chua hấp dẫn như canh chua cá lóc, canh chua tôm, canh chua sườn non...
+
+Hiện tại, Bách Hóa Xanh chưa tìm thấy các sản phẩm nguyên liệu canh chua cụ thể đang có sẵn để gợi ý cho bạn. Rất mong bạn thông cảm nhé!",Correct Answer,TP,"Trả lời đúng trọng tâm, liệt kê đầy đủ nguyên liệu theo yêu cầu và khớp với expected."
+93,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây""","Chào bạn! Để làm món salad trộn dầu giấm thơm ngon, bạn có thể chuẩn bị các nguyên liệu sau nhé:
+
+*   **Rau xanh:** Xà lách (xà lách lolo xanh, xà lách xoăn, xà lách mỡ), rau cải mầm, rau rocket...
+*   **Rau củ khác:** Cà chua bi, dưa chuột, hành tây thái mỏng, ớt chuông (xanh, đỏ, vàng), bắp cải tím thái sợi.
+*   **Thực phẩm bổ sung protein (tùy chọn):** Ức gà luộc/áp chảo xé sợi, trứng gà luộc, tôm luộc, cá ngừ đóng hộp, đậu phụ chiên.
+*   **Gia vị và sốt dầu giấm:** Dầu ô liu nguyên chất, giấm táo hoặc giấm gạo, đường, muối, tiêu xay, tỏi băm nhỏ (tùy thích), một ít mù tạt vàng (Dijon mustard) để tăng hương vị.
+*   **Topping (tùy chọn):** Bánh mì crouton, các loại hạt (hạt óc chó, hạt điều), phô mai bào sợi.
+
+Dưới đây là một số sản phẩm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+*   HaiDuong - 111211.0đ/gam (giảm 20%)
+*   Nấm mèo đen thái sợi 50g - 16.000đ/Gói 50g
+*   Nấm đông cô gói 50g - 30.000đ/Gói 50g",Hallucination / Unsupported,FP,Gợi ý sản phẩm có thông tin sai lệch (giá vô lý) và không phù hợp với yêu cầu làm salad.
+94,Có combo nấm nào tiết kiệm không?,"""Gợi ý: Combo 3 gói nấm kim châm, Combo nấm lẩu""","Chào bạn! Nấm là một lựa chọn tuyệt vời cho bữa ăn vừa ngon miệng, bổ dưỡng lại còn tiết kiệm nữa đó. Để có một combo nấm tiết kiệm, bạn có thể kết hợp các loại nấm tươi và nấm khô để món ăn thêm phong phú về hương vị và kết cấu, mà chi phí lại rất phải chăng. Nấm có thể chế biến thành nhiều món ngon như xào, nấu canh, làm lẩu hoặc kho chay đều rất hấp dẫn.
+
+Dưới đây là một số sản phẩm nấm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo để tạo combo tiết kiệm của mình nhé:
+Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+Nấm đùi gà baby nội địa Trung: 20.000đ/200g
+Nấm đông cô gói 50g: 30.000đ/Gói 50g
+Nấm hương khô gói 50g: 32.000đ/Gói 50g
+Nấm tuyết gói 50g: 39.000đ/Gói 50g",Partially Correct,TP,"Trả lời về nấm tiết kiệm và liệt kê sản phẩm lẻ, nhưng không đưa ra các ""combo nấm"" cụ thể như yêu cầu."
+95,Rau củ nào tốt cho người ăn kiêng?,"""Gợi ý: Dưa leo, Cà chua, Xà lách, Bí xanh""","Chào bạn, rất vui được hỗ trợ bạn trong hành trình ăn kiêng khỏe mạnh!
+
+Rau củ là lựa chọn tuyệt vời cho người ăn kiêng vì chúng thường chứa rất ít calo nhưng lại giàu chất xơ, vitamin và khoáng chất thiết yếu. Chất xơ giúp bạn cảm thấy no lâu hơn, hỗ trợ tiêu hóa và ổn định đường huyết, rất quan trọng trong việc kiểm soát cân nặng.
+
+Một số loại rau củ đặc biệt tốt cho người ăn kiêng bao gồm:
+-   **Các loại rau lá xanh đậm:** Cải bó xôi, cải xoăn, rau diếp, xà lách... Chúng rất giàu vitamin K, A, C và chất xơ.
+-   **Bông cải xanh và súp lơ trắng:** Cung cấp nhiều chất xơ, vitamin C và các hợp chất chống oxy hóa.
+-   **Dưa chuột và cà chua:** Chứa nhiều nước, ít calo, giúp cấp nước và tạo cảm giác no.
+-   **Ớt chuông:** Giàu vitamin C và chất chống oxy hóa, có thể giúp tăng cường trao đổi chất.
+-   **Bí đao, bí xanh:** Rất ít calo, nhiều nước, thích hợp cho các món canh, luộc.
+-   **Nấm các loại:** Ít calo, giàu protein thực vật và chất xơ, là nguồn thay thế thịt tuyệt vời.
+
+Dưới đây là một số sản phẩm nấm và rau củ đang có tại Bách Hóa Xanh mà bạn có thể tham khảo:
+Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+Nấm đông cô gói 50g: 30.000đ/Gói 50g",Correct Answer,TP,"Trả lời đúng trọng tâm, cung cấp danh sách rau củ phù hợp và giải thích lợi ích, bao gồm các mục trong expected."
+96,Có combo nấm nào tiết kiệm không?,"""Gợi ý: Combo 3 gói nấm kim châm, Combo nấm lẩu""","Chào bạn! Nấm là một lựa chọn tuyệt vời cho bữa ăn vừa ngon miệng, bổ dưỡng lại còn tiết kiệm nữa đó. Để có một combo nấm tiết kiệm, bạn có thể kết hợp các loại nấm tươi và nấm khô để món ăn thêm phong phú về hương vị và kết cấu, mà chi phí lại rất phải chăng. Nấm có thể chế biến thành nhiều món ngon như xào, nấu canh, làm lẩu hoặc kho chay đều rất hấp dẫn.
+
+Dưới đây là một số sản phẩm nấm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo để tạo combo tiết kiệm của mình nhé:
+Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+Nấm đùi gà baby nội địa Trung: 20.000đ/200g
+Nấm đông cô gói 50g: 30.000đ/Gói 50g
+Nấm hương khô gói 50g: 32.000đ/Gói 50g
+Nấm tuyết gói 50g: 39.000đ/Gói 50g",Partially Correct,TP,"Trả lời về nấm và giá nhưng không gợi ý combo cụ thể như yêu cầu, chỉ liệt kê sản phẩm lẻ."
+97,Rau củ nào tốt cho người ăn kiêng?,"""Gợi ý: Dưa leo, Cà chua, Xà lách, Bí xanh""","Chào bạn, rất vui được hỗ trợ bạn trong hành trình ăn kiêng khỏe mạnh!
+
+Rau củ là lựa chọn tuyệt vời cho người ăn kiêng vì chúng thường chứa rất ít calo nhưng lại giàu chất xơ, vitamin và khoáng chất thiết yếu. Chất xơ giúp bạn cảm thấy no lâu hơn, hỗ trợ tiêu hóa và ổn định đường huyết, rất quan trọng trong việc kiểm soát cân nặng.
+
+Một số loại rau củ đặc biệt tốt cho người ăn kiêng bao gồm:
+-   **Các loại rau lá xanh đậm:** Cải bó xôi, cải xoăn, rau diếp, xà lách... Chúng rất giàu vitamin K, A, C và chất xơ.
+-   **Bông cải xanh và súp lơ trắng:** Cung cấp nhiều chất xơ, vitamin C và các hợp chất chống oxy hóa.
+-   **Dưa chuột và cà chua:** Chứa nhiều nước, ít calo, giúp cấp nước và tạo cảm giác no.
+-   **Ớt chuông:** Giàu vitamin C và chất chống oxy hóa, có thể giúp tăng cường trao đổi chất.
+-   **Bí đao, bí xanh:** Rất ít calo, nhiều nước, thích hợp cho các món canh, luộc.
+-   **Nấm các loại:** Ít calo, giàu protein thực vật và chất xơ, là nguồn thay thế thịt tuyệt vời.
+
+Dưới đây là một số sản phẩm nấm và rau củ đang có tại Bách Hóa Xanh mà bạn có thể tham khảo:
+Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+Nấm đông cô gói 50g: 30.000đ/Gói 50g",Correct Answer,TP,"Trả lời đúng trọng tâm, cung cấp danh sách rau củ phù hợp và giải thích lợi ích, bao gồm các mục trong expected."
+98,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây""","Chào bạn! Để làm món salad trộn dầu giấm thơm ngon, bạn có thể chuẩn bị các nguyên liệu sau nhé:
+
+*   **Rau xanh:** Xà lách (xà lách lolo xanh, xà lách xoăn, xà lách mỡ), rau cải mầm, rau rocket...
+*   **Rau củ khác:** Cà chua bi, dưa chuột, hành tây thái mỏng, ớt chuông (xanh, đỏ, vàng), bắp cải tím thái sợi.
+*   **Thực phẩm bổ sung protein (tùy chọn):** Ức gà luộc/áp chảo xé sợi, trứng gà luộc, tôm luộc, cá ngừ đóng hộp, đậu phụ chiên.
+*   **Gia vị và sốt dầu giấm:** Dầu ô liu nguyên chất, giấm táo hoặc giấm gạo, đường, muối, tiêu xay, tỏi băm nhỏ (tùy thích), một ít mù tạt vàng (Dijon mustard) để tăng hương vị.
+*   **Topping (tùy chọn):** Bánh mì crouton, các loại hạt (hạt óc chó, hạt điều), phô mai bào sợi.
+
+Dưới đây là một số sản phẩm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo:
+*   HaiDuong - 111211.0đ/gam (giảm 20%)
+*   Nấm mèo đen thái sợi 50g - 16.000đ/Gói 50g
+*   Nấm đông cô gói 50g - 30.000đ/Gói 50g",Partially Correct,TP,"Liệt kê nguyên liệu đúng và đầy đủ, nhưng gợi ý sản phẩm cuối cùng không liên quan và có thông tin sai/bịa."
+99,Món gì nấu canh chua ngon?,"""Gợi ý: Cà chua, Thơm, Đậu bắp, Bạc hà, Giá""","Chào bạn, để nấu một nồi canh chua ngon chuẩn vị, bạn có thể tham khảo các nguyên liệu sau nhé:
+
+*   **Nguyên liệu chính (chọn 1 trong các loại):** Cá (cá lóc, cá diêu hồng, cá basa), tôm, sườn non hoặc thịt gà.
+*   **Vị chua:** Me vắt (hoặc nước cốt me), cà chua, dứa (thơm).
+*   **Rau củ:** Bạc hà (dọc mùng), đậu bắp, giá đỗ, hành tây.
+*   **Gia vị và rau thơm:** Tỏi băm, ớt, ngò gai, rau om (ngổ), hành lá, nước mắm, đường, muối, dầu ăn.
+
+Với những nguyên liệu này, bạn có thể biến tấu thành nhiều món canh chua hấp dẫn như canh chua cá lóc, canh chua tôm, canh chua sườn non...
+
+Hiện tại, Bách Hóa Xanh chưa tìm thấy các sản phẩm nguyên liệu canh chua cụ thể đang có sẵn để gợi ý cho bạn. Rất mong bạn thông cảm nhé!",Correct Answer,TP,"Trả lời đúng trọng tâm, đầy đủ các nguyên liệu nấu canh chua và bao gồm tất cả gợi ý từ expected."
+100,Có combo nấm nào tiết kiệm không?,"""Gợi ý: Combo 3 gói nấm kim châm, Combo nấm lẩu""","Chào bạn! Nấm là một lựa chọn tuyệt vời cho bữa ăn vừa ngon miệng, bổ dưỡng lại còn tiết kiệm nữa đó. Để có một combo nấm tiết kiệm, bạn có thể kết hợp các loại nấm tươi và nấm khô để món ăn thêm phong phú về hương vị và kết cấu, mà chi phí lại rất phải chăng. Nấm có thể chế biến thành nhiều món ngon như xào, nấu canh, làm lẩu hoặc kho chay đều rất hấp dẫn.
+
+Dưới đây là một số sản phẩm nấm đang có giá tốt tại Bách Hóa Xanh mà bạn có thể tham khảo để tạo combo tiết kiệm của mình nhé:
+Nấm mèo đen thái sợi 50g: 16.000đ/Gói 50g
+Nấm đùi gà baby nội địa Trung: 20.000đ/200g
+Nấm đông cô gói 50g: 30.000đ/Gói 50g
+Nấm hương khô gói 50g: 32.000đ/Gói 50g
+Nấm tuyết gói 50g: 39.000đ/Gói 50g",Partially Correct,TP,"Trả lời về nấm và giá nhưng không gợi ý combo cụ thể như yêu cầu, chỉ liệt kê sản phẩm lẻ."

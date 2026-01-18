@@ -1,0 +1,43 @@
+services:
+  # Frontend Service
+  - type: web
+    name: kltn-fe-ecom
+    env: docker
+    dockerContext: ./kltn-fe-ecom
+    dockerfilePath: ./kltn-fe-ecom/Dockerfile
+    plan: free
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://be-api-service.onrender.com # Update with actual BE URL after deploy
+      - key: NEXT_PUBLIC_CHATBOT_URL
+        value: https://chatbot-service.onrender.com # Update with actual Chatbot URL after deploy
+
+  # Backend Service
+  - type: web
+    name: be-api-service
+    env: docker
+    dockerContext: ./BE
+    dockerfilePath: ./BE/Dockerfile
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        sync: false # Set in Render Dashboard
+      - key: REDIS_URL
+        sync: false 
+      - key: SECRET_KEY
+        generateValue: true
+
+  # Chatbot Service
+  - type: web
+    name: chatbot-service
+    env: docker
+    dockerContext: ./chatbot-kltn
+    dockerfilePath: ./chatbot-kltn/Dockerfile
+    plan: free
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: QDRANT_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false

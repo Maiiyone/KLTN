@@ -1,0 +1,24 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.template
+
+# System files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Key files
+*.pem
+*.key
+*.p12
+
+# Logs
+*.log
+logs/
+
+# Build artifacts
+dist/
+build/

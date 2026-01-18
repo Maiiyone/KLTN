@@ -1,0 +1,52 @@
+@startuml Online_RAG_Sequence
+!theme vibrant
+title Online RAG Interaction Flow
+
+actor "User" as User
+participant "Frontend" as FE
+participant "Backend API" as API
+control "LangGraph" as Graph
+participant "Redis Memory" as Memory
+participant "LLM (Gemini)" as LLM
+database "Qdrant" as VectorDB
+database "MySQL" as MySQL
+participant "Response Cache" as Cache
+
+User -> FE : Send Message
+FE -> API : POST /chat
+API -> Graph : Invoke State
+
+Graph -> Memory : Fetch History
+Graph -> LLM : Analyze Intent/Keywords
+LLM --> Graph : Intent, Query, Filters
+
+alt Intent == "product_search"
+    group Retrieval
+        Graph -> VectorDB : Search (Query Vector)
+        VectorDB --> Graph : Top-K Products
+        
+        alt No Results
+            Graph -> MySQL : Keyword Search (SQL)
+            MySQL --> Graph : Products
+        end
+    end
+    
+    Graph -> Cache : Check Cache
+    alt Cache Miss
+        Graph -> LLM : Generate Response
+        LLM --> Graph : Answer
+        Graph -> Cache : Store Response
+    else Cache Hit
+        Cache --> Graph : Cached Answer
+    end
+    
+else Intent == "orders" OR "profile"
+    Graph -> MySQL : Fetch User Data
+    MySQL --> Graph : User Info
+end
+
+Graph -> Memory : Save Conversation
+Graph --> API : Final Response
+API --> FE : JSON
+FE --> User : Display
+@enduml

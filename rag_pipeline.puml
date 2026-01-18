@@ -1,0 +1,88 @@
+@startuml Offline_Pipeline
+!theme vibrant
+title Offline Data Processing Pipeline
+
+package "Data Acquisition" {
+    [Bach Hoa Xanh Website] as Source
+    component "Scraper Script\n(bhx_script.py)" as Scraper
+    file "Raw Data\n(total_products.json)" as RawJSON
+}
+
+package "Data Cleaning" {
+    component "Data Cleaner\n(process_price_unit.py)" as Cleaner
+    file "Processed Data\n(total_products_processed_all.json)" as CleanJSON
+}
+
+package "Storage & Indexing" {
+    component "SQL Converter\n(convert_bhx_json_sql.py)" as SQLConv
+    component "Embedding Script\n(embedded_data_to_vector.py)" as Embedder
+    
+    database "MySQL\n(Product Info)" as MySQL
+    cloud "Gemini API\n(Embedding Model)" as EmbedModel
+    database "Qdrant\n(Vector Store)" as VectorDB
+}
+
+Source --> Scraper : Scrapes
+Scraper --> RawJSON : Saves
+RawJSON --> Cleaner : Input
+Cleaner --> CleanJSON : Output
+RawJSON --> SQLConv : Input
+SQLConv --> MySQL : Insert
+CleanJSON --> Embedder : Input
+Embedder --> EmbedModel : Gen Vectors
+EmbedModel --> Embedder : Vectors
+Embedder --> VectorDB : Upsert
+@enduml
+
+@startuml Online_RAG_Sequence
+!theme vibrant
+title Online RAG Interaction Flow
+
+actor "User" as User
+participant "Frontend" as FE
+participant "Backend API" as API
+control "LangGraph" as Graph
+participant "Redis Memory" as Memory
+participant "LLM (Gemini)" as LLM
+database "Qdrant" as VectorDB
+database "MySQL" as MySQL
+participant "Response Cache" as Cache
+
+User -> FE : Send Message
+FE -> API : POST /chat
+API -> Graph : Invoke State
+
+Graph -> Memory : Fetch History
+Graph -> LLM : Analyze Intent/Keywords
+LLM --> Graph : Intent, Query, Filters
+
+alt Intent == "product_search"
+    group Retrieval
+        Graph -> VectorDB : Search (Query Vector)
+        VectorDB --> Graph : Top-K Products
+        
+        alt No Results
+            Graph -> MySQL : Keyword Search (SQL)
+            MySQL --> Graph : Products
+        end
+    end
+    
+    Graph -> Cache : Check Cache
+    alt Cache Miss
+        Graph -> LLM : Generate Response
+        LLM --> Graph : Answer
+        Graph -> Cache : Store Response
+    else Cache Hit
+        Cache --> Graph : Cached Answer
+    end
+    
+else Intent == "orders" OR "profile"
+    Graph -> MySQL : Fetch User Data
+    MySQL --> Graph : User Info
+end
+
+Graph -> Memory : Save Conversation
+Graph --> API : Final Response
+API --> FE : JSON
+FE --> User : Display
+@enduml

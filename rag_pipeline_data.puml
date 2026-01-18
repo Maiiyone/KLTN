@@ -1,0 +1,35 @@
+@startuml Offline_Pipeline
+!theme vibrant
+title Offline Data Processing Pipeline
+
+package "Data Acquisition" {
+    [Bach Hoa Xanh Website] as Source
+    component "Scraper Script\n(bhx_script.py)" as Scraper
+    file "Raw Data\n(total_products.json)" as RawJSON
+}
+
+package "Data Cleaning" {
+    component "Data Cleaner\n(process_price_unit.py)" as Cleaner
+    file "Processed Data\n(total_products_processed_all.json)" as CleanJSON
+}
+
+package "Storage & Indexing" {
+    component "SQL Converter\n(convert_bhx_json_sql.py)" as SQLConv
+    component "Embedding Script\n(embedded_data_to_vector.py)" as Embedder
+    
+    database "MySQL\n(Product Info)" as MySQL
+    cloud "Gemini API\n(Embedding Model)" as EmbedModel
+    database "Qdrant\n(Vector Store)" as VectorDB
+}
+
+Source --> Scraper : Scrapes
+Scraper --> RawJSON : Saves
+RawJSON --> Cleaner : Input
+Cleaner --> CleanJSON : Output
+RawJSON --> SQLConv : Input
+SQLConv --> MySQL : Insert
+CleanJSON --> Embedder : Input
+Embedder --> EmbedModel : Gen Vectors
+EmbedModel --> Embedder : Vectors
+Embedder --> VectorDB : Upsert
+@enduml

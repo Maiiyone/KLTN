@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "difficulty": "Easy",
+    "gold": "ANSWER",
+    "user_query": "Giá của Rau muống nước là bao nhiêu?",
+    "expected": "5.000đ/400g",
+    "chatbot_response": "Chào bạn, rau muống nước hiện đang có giá 5.000đ cho 400g tại Bách Hóa Xanh nhé! Đây là loại rau rất giàu vitamin và khoáng chất, đặc biệt là vitamin A, C và sắt, rất tốt cho sức khỏe.\n\nDưới đây là một số sản phẩm rau muống nước đang có giá tốt:\nRau muống nước - 5.000đ/400g",
+    "response_time_seconds": 8.94
+  },
+  {
+    "id": 2,
+    "difficulty": "Easy",
+    "gold": "ANSWER",
+    "user_query": "Củ dền xuất xứ ở đâu?",
+    "expected": "Thông tin có trong mô tả sản phẩm (VN/Trung Quốc/Thái Lan...)",
+    "chatbot_response": "Chào bạn, củ dền (hay còn gọi là củ cải đường) có nguồn gốc từ vùng Địa Trung Hải. Ban đầu, người ta chỉ sử dụng lá của nó, sau này mới phát hiện ra giá trị dinh dưỡng và hương vị của phần củ. Hiện nay, củ dền được trồng phổ biến ở nhiều nơi trên thế giới, đặc biệt là các nước ôn đới và cận nhiệt đới.\n\nDưới đây là một số sản phẩm củ dền đang có giá tốt tại Bách Hóa Xanh:\nCủ dền 7.000đ/200g\nCủ dền 11.100đ/300g",
+    "response_time_seconds": 7.07
+  },
+  {
+    "id": 3,
+    "difficulty": "Easy",
+    "gold": "ANSWER",
+    "user_query": "Cho tôi biết mã sản phẩm của Khoai tây củ từ 130g",
+    "expected": "2701122049200",
+    "chatbot_response": "Chào bạn, hiện tại mình chưa có thông tin mã sản phẩm cụ thể cho Khoai tây củ từ 130g. Tuy nhiên, mình có thể cung cấp thông tin về sản phẩm này nhé.\n\nDưới đây là một số sản phẩm Khoai tây củ từ đang có giá tốt:\nKhoai tây củ từ 130g - 15.000đ/500g",
+    "response_time_seconds": 9.54
+  },
+  {
+    "id": 4,
+    "difficulty": "Easy",
+    "gold": "ANSWER",
+    "user_query": "Cà chua bi bao nhiêu tiền?",
+    "expected": "19.000đ/300g",
+    "chatbot_response": "Chào bạn, cà chua bi hiện đang có giá 19.000đ cho 300g nhé.\n\nDưới đây là một số sản phẩm cà chua bi đang có giá tốt:\nCà chua bi - 19.000đ/300g",
+    "response_time_seconds": 6.34
+  },
+  {
+    "id": 5,
+    "difficulty": "Easy",
+    "gold": "ANSWER",
+    "user_query": "Cho tôi biết mã sản phẩm của Nấm kim châm nội địa Trung",
+    "expected": "1233934000149",
+    "chatbot_response": "Chào bạn, Nấm kim châm là một loại nấm rất được yêu thích bởi hương vị ngọt thanh, giòn dai và giá trị dinh dưỡng cao. Nấm kim châm giàu chất xơ, vitamin nhóm B, kali, sắt, giúp hỗ trợ tiêu hóa, tăng cường miễn dịch và tốt cho tim mạch. Bạn có thể dùng nấm kim châm để nấu lẩu, xào, làm salad hoặc cuộn thịt nướng đều rất ngon và hấp dẫn.\n\nHiện tại, Bách Hóa Xanh chưa tìm thấy sản phẩm Nấm kim châm nội địa Trung cụ thể mà bạn đang tìm. Tuy nhiên, cửa hàng đang có nhiều loại nấm nội địa Trung khác rất tươi ngon và chất lượng. Dưới đây là một số sản phẩm nấm nội địa Trung đang có giá tốt:\nNấm đùi gà baby nội địa Trung: 20.000đ/200g\nNấm linh chi nâu nội địa Trung: 17.000đ/150g\nNấm linh chi trắng nội địa Trung: 17.000đ/150g\nNấm đùi gà nội địa Trung: 26.000đ/500g (giảm 32%)\n2 gói nấm hải sản nội địa Trung: 18.000đ/2 gói 150g (giảm 31%)",
+    "response_time_seconds": 12.2
+  }
+]

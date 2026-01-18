@@ -1,0 +1,101 @@
+﻿id,difficulty,gold,query,expected
+1,Easy,ANSWER,Giá của Rau muống nước là bao nhiêu?,5.000đ/400g
+2,Easy,ANSWER,Củ dền xuất xứ ở đâu?,Thông tin có trong mô tả sản phẩm (VN/Trung Quốc/Thái Lan...)
+3,Easy,ANSWER,Cho tôi biết mã sản phẩm của Khoai tây củ từ 130g,2701122049200
+4,Easy,ANSWER,Cà chua bi bao nhiêu tiền?,19.000đ/300g
+5,Easy,ANSWER,Cho tôi biết mã sản phẩm của Nấm kim châm nội địa Trung,1233934000149
+6,Easy,ANSWER,Giá của Cải bẹ xanh là bao nhiêu?,14.900đ/300g
+7,Easy,ANSWER,Bí xanh bao nhiêu tiền?,15.000đ/1 trái từ 370g trở lên
+8,Easy,ANSWER,Giá của Nấm bào ngư xám là bao nhiêu?,22.000đ/300g
+9,Easy,ANSWER,Chanh không hạt bao nhiêu tiền?,8.500đ/250g
+10,Easy,ANSWER,Cho tôi biết mã sản phẩm của Củ cải trắng,2701122048800
+11,Easy,ANSWER,Giá của Củ dền là bao nhiêu?,11.100đ/300g
+12,Easy,ANSWER,Cải thìa xuất xứ ở đâu?,Thông tin có trong mô tả sản phẩm (VN/Trung Quốc/Thái Lan...)
+13,Easy,ANSWER,Cho tôi biết mã sản phẩm của Tiêu xanh,1233020000273
+14,Easy,ANSWER,3 trái bắp mỹ bao nhiêu tiền?,24.000đ
+15,Easy,ANSWER,Cho tôi biết mã sản phẩm của Bí đỏ tròn,9932844000175
+16,Easy,ANSWER,Cà tím xuất xứ ở đâu?,Thông tin có trong mô tả sản phẩm (VN/Trung Quốc/Thái Lan...)
+17,Easy,ANSWER,Giá của Rau muống nước là bao nhiêu?,5.000đ/400g
+18,Easy,ANSWER,Giá của Đậu cove là bao nhiêu?,16.000đ/250g
+19,Easy,ANSWER,Nấm rơm bao nhiêu tiền?,20.000đ/180-220g
+20,Easy,ANSWER,Giá của Dưa leo là bao nhiêu?,10.500đ/500g
+21,Easy,ANSWER,Đậu bắp bao nhiêu tiền?,9.000đ/250g
+22,Easy,ANSWER,Giá của Cà tím là bao nhiêu?,14.800đ/500g
+23,Easy,ANSWER,Giá của Chanh không hạt là bao nhiêu?,8.500đ/250g
+24,Easy,ANSWER,Chanh không hạt bao nhiêu tiền?,8.500đ/250g
+25,Easy,ANSWER,Cho tôi biết mã sản phẩm của Rau muống nước,1232844000831
+26,Easy,ANSWER,Giá của Ớt chuông xanh-vàng-đỏ giao ngẫu nhiên là bao nhiêu?,17.500đ/250g
+27,Easy,ANSWER,Giá của Cải thìa là bao nhiêu?,14.900đ/300g
+28,Easy,ANSWER,Giá của Cà chua beef là bao nhiêu?,25.000đ/500g
+29,Easy,ANSWER,Bắp mỹ bao nhiêu tiền?,10.000đ/1 trái 300-400g
+30,Easy,ANSWER,3 trái bắp mỹ bao nhiêu tiền?,24.000đ
+31,Easy,ANSWER,Cho tôi biết mã sản phẩm của Nấm rơm,1233934000138
+32,Easy,ANSWER,Củ cải trắng bao nhiêu tiền?,8.700đ/300g
+33,Easy,ANSWER,Đậu cove bao nhiêu tiền?,16.000đ/250g
+34,Easy,ANSWER,Nấm rơm bao nhiêu tiền?,20.000đ/180-220g
+35,Easy,ANSWER,Tiêu xanh bao nhiêu tiền?,9.500đ/50g
+36,Easy,ANSWER,Cho tôi biết mã sản phẩm của Bí đỏ hồ lô (1 trái),1233020000397
+37,Easy,ANSWER,Bắp cải trắng xuất xứ ở đâu?,Thông tin có trong mô tả sản phẩm (VN/Trung Quốc/Thái Lan...)
+38,Easy,ANSWER,Giá của Bắp cải tím là bao nhiêu?,20.000đ/500g
+39,Easy,ANSWER,Giá của Cà chua beef là bao nhiêu?,25.000đ/500g
+40,Easy,ANSWER,Cho tôi biết mã sản phẩm của Ớt hiểm,1232844000240
+41,Medium,ANSWER,Cửa hàng có bán các loại cà chua nào?,"""Cà chua bi, Cà chua beef"""
+42,Medium,ANSWER,Tìm dưa leo giá dưới 20.000đ,"""Dưa leo, Dưa leo baby từ 5-7 trái"""
+43,Medium,ANSWER,Tìm bí giá dưới 20.000đ,"""Bí đỏ tròn, Bí xanh"""
+44,Medium,ANSWER,Tìm cà chua giá dưới 20.000đ,"""Cà chua bi, Cà chua beef"""
+45,Medium,ANSWER,Cửa hàng có bán các loại cải nào?,"""Bắp cải trắng, Bắp cải thảo, Bắp cải tím"""
+46,Medium,ANSWER,Cửa hàng có bán các loại cải nào?,"""Bắp cải trắng, Bắp cải thảo, Bắp cải tím"""
+47,Medium,ANSWER,Tìm bí giá dưới 20.000đ,"""Bí đỏ tròn, Bí xanh"""
+48,Medium,ANSWER,Tìm bí giá dưới 20.000đ,"""Bí đỏ tròn, Bí xanh"""
+49,Medium,ANSWER,Cửa hàng có bán các loại cải nào?,"""Bắp cải trắng, Bắp cải thảo, Bắp cải tím"""
+50,Medium,ANSWER,Cửa hàng có bán các loại bí nào?,"""Bí đỏ tròn, Bí đỏ hồ lô (1 trái), Bí xanh"""
+51,Medium,ANSWER,Tìm khoai giá dưới 20.000đ,"""Khoai tây củ từ 130g, Khoai lang Nhật"""
+52,Medium,ANSWER,Tìm dưa leo giá dưới 20.000đ,"""Dưa leo, Dưa leo baby từ 5-7 trái"""
+53,Medium,ANSWER,Cửa hàng có bán các loại bí nào?,"""Bí đỏ tròn, Bí đỏ hồ lô (1 trái), Bí xanh"""
+54,Medium,ANSWER,Cửa hàng có bán các loại dưa leo nào?,"""Dưa leo, Dưa leo baby từ 5-7 trái"""
+55,Medium,ANSWER,Tìm dưa leo giá dưới 20.000đ,"""Dưa leo, Dưa leo baby từ 5-7 trái"""
+56,Medium,ANSWER,Cửa hàng có bán các loại bí nào?,"""Bí đỏ tròn, Bí đỏ hồ lô (1 trái), Bí xanh"""
+57,Medium,ANSWER,Tìm cải giá dưới 20.000đ,"""Bắp cải trắng, Bắp cải thảo"""
+58,Medium,ANSWER,Tìm dưa leo giá dưới 20.000đ,"""Dưa leo, Dưa leo baby từ 5-7 trái"""
+59,Medium,ANSWER,Tìm khoai giá dưới 20.000đ,"""Khoai tây củ từ 130g, Khoai lang Nhật"""
+60,Medium,ANSWER,Cửa hàng có bán các loại cải nào?,"""Bắp cải trắng, Bắp cải thảo, Bắp cải tím"""
+61,Medium,ANSWER,Cửa hàng có bán các loại nấm nào?,"""Nấm kim châm nội địa Trung, Nấm hương (nấm đông cô), Nấm đùi gà nội địa Trung"""
+62,Medium,ANSWER,Cửa hàng có bán các loại nấm nào?,"""Nấm kim châm nội địa Trung, Nấm hương (nấm đông cô), Nấm đùi gà nội địa Trung"""
+63,Medium,ANSWER,Cửa hàng có bán các loại khoai nào?,"""Khoai tây củ từ 130g, Khoai lang Nhật"""
+64,Medium,ANSWER,Cửa hàng có bán các loại bí nào?,"""Bí đỏ tròn, Bí đỏ hồ lô (1 trái), Bí xanh"""
+65,Medium,ANSWER,Cửa hàng có bán các loại cà chua nào?,"""Cà chua bi, Cà chua beef"""
+66,Medium,ANSWER,Cửa hàng có bán các loại nấm nào?,"""Nấm kim châm nội địa Trung, Nấm hương (nấm đông cô), Nấm đùi gà nội địa Trung"""
+67,Medium,ANSWER,Tìm cải giá dưới 20.000đ,"""Bắp cải trắng, Bắp cải thảo"""
+68,Medium,ANSWER,Tìm khoai giá dưới 20.000đ,"""Khoai tây củ từ 130g, Khoai lang Nhật"""
+69,Medium,ANSWER,Cửa hàng có bán các loại cà chua nào?,"""Cà chua bi, Cà chua beef"""
+70,Medium,ANSWER,Cửa hàng có bán các loại cà chua nào?,"""Cà chua bi, Cà chua beef"""
+71,Medium,ANSWER,Tìm cà chua giá dưới 20.000đ,"""Cà chua bi, Cà chua beef"""
+72,Medium,ANSWER,Cửa hàng có bán các loại cải nào?,"""Bắp cải trắng, Bắp cải thảo, Bắp cải tím"""
+73,Medium,ANSWER,Tìm ớt giá dưới 20.000đ,"""Ớt chuông xanh-vàng-đỏ giao ngẫu nhiên, Ớt hiểm"""
+74,Medium,ANSWER,Cửa hàng có bán các loại bí nào?,"""Bí đỏ tròn, Bí đỏ hồ lô (1 trái), Bí xanh"""
+75,Medium,ANSWER,Tìm ớt giá dưới 20.000đ,"""Ớt chuông xanh-vàng-đỏ giao ngẫu nhiên, Ớt hiểm"""
+76,Hard,ANSWER,Món gì nấu canh chua ngon?,"""Gợi ý: Cà chua, Thơm, Đậu bắp, Bạc hà, Giá"""
+77,Hard,ANSWER,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây"""
+78,Hard,ANSWER,Rau củ nào tốt cho người ăn kiêng?,"""Gợi ý: Dưa leo, Cà chua, Xà lách, Bí xanh"""
+79,Hard,ANSWER,Rau củ nào tốt cho người ăn kiêng?,"""Gợi ý: Dưa leo, Cà chua, Xà lách, Bí xanh"""
+80,Hard,ANSWER,Tư vấn nguyên liệu nấu lẩu thái,"""Gợi ý: Nấm kim châm, Cải thảo, Đậu bắp, Cà chua, Sả cây"""
+81,Hard,ANSWER,Tư vấn nguyên liệu nấu lẩu thái,"""Gợi ý: Nấm kim châm, Cải thảo, Đậu bắp, Cà chua, Sả cây"""
+82,Hard,ANSWER,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây"""
+83,Hard,ANSWER,Có combo nấm nào tiết kiệm không?,"""Gợi ý: Combo 3 gói nấm kim châm, Combo nấm lẩu"""
+84,Hard,ANSWER,Tư vấn nguyên liệu nấu lẩu thái,"""Gợi ý: Nấm kim châm, Cải thảo, Đậu bắp, Cà chua, Sả cây"""
+85,Hard,ANSWER,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây"""
+86,Hard,ANSWER,Món gì nấu canh chua ngon?,"""Gợi ý: Cà chua, Thơm, Đậu bắp, Bạc hà, Giá"""
+87,Hard,ANSWER,Tư vấn nguyên liệu nấu lẩu thái,"""Gợi ý: Nấm kim châm, Cải thảo, Đậu bắp, Cà chua, Sả cây"""
+88,Hard,ANSWER,Có combo nấm nào tiết kiệm không?,"""Gợi ý: Combo 3 gói nấm kim châm, Combo nấm lẩu"""
+89,Hard,ANSWER,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây"""
+90,Hard,ANSWER,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây"""
+91,Hard,ANSWER,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây"""
+92,Hard,ANSWER,Món gì nấu canh chua ngon?,"""Gợi ý: Cà chua, Thơm, Đậu bắp, Bạc hà, Giá"""
+93,Hard,ANSWER,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây"""
+94,Hard,ANSWER,Có combo nấm nào tiết kiệm không?,"""Gợi ý: Combo 3 gói nấm kim châm, Combo nấm lẩu"""
+95,Hard,ANSWER,Rau củ nào tốt cho người ăn kiêng?,"""Gợi ý: Dưa leo, Cà chua, Xà lách, Bí xanh"""
+96,Hard,ANSWER,Có combo nấm nào tiết kiệm không?,"""Gợi ý: Combo 3 gói nấm kim châm, Combo nấm lẩu"""
+97,Hard,ANSWER,Rau củ nào tốt cho người ăn kiêng?,"""Gợi ý: Dưa leo, Cà chua, Xà lách, Bí xanh"""
+98,Hard,ANSWER,Mua đồ làm salad trộn dầu giấm,"""Gợi ý: Xà lách, Cà chua bi, Dưa leo, Hành tây"""
+99,Hard,ANSWER,Món gì nấu canh chua ngon?,"""Gợi ý: Cà chua, Thơm, Đậu bắp, Bạc hà, Giá"""
+100,Hard,ANSWER,Có combo nấm nào tiết kiệm không?,"""Gợi ý: Combo 3 gói nấm kim châm, Combo nấm lẩu"""
