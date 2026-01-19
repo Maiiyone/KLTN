@@ -110,7 +110,7 @@ class BHXDataInserter:
             print("✅ Đã đóng kết nối MySQL")
 
 def main():
-    print("🚀 BÁCH HÓA XANH - INSERT JSON TO MYSQL")
+    print("🚀 Nông SẢN XANH - INSERT JSON TO MYSQL")
     print("=" * 50)
     
     # Cấu hình MySQL (thay đổi password của bạn)

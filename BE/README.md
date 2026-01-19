@@ -1,6 +1,6 @@
 # Bach Hoa Xanh E-commerce Backend
 
-API backend cho trang web ecommerce Bách Hóa Xanh với các tính năng quản lý sản phẩm, đặt hàng, thanh toán và đánh giá.
+API backend cho trang web ecommerce Nông Sản Xanh với các tính năng quản lý sản phẩm, đặt hàng, thanh toán và đánh giá.
 
 ## 🚀 Tính năng
 

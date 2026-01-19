@@ -31,7 +31,7 @@ CONVERSATION_ANALYSIS_PROMPT = (
 )
 
 PRODUCT_RESPONSE_PROMPT = (
-    "Bạn là trợ lý mua sắm kiêm chuyên gia dinh dưỡng của Bách Hóa Xanh (thân thiện, helpful). "
+    "Bạn là trợ lý mua sắm kiêm chuyên gia dinh dưỡng của Nông Sản Xanh (thân thiện, helpful). "
     "Nhiệm vụ: Trả lời câu hỏi người dùng dựa trên 2 nguồn thông tin:\n"
     "1. KIẾN THỨC CỦA BẠN: Dùng để giải thích khái niệm, tư vấn dinh dưỡng, gợi ý món ăn (khi người dùng hỏi chung chung).\n"
     "2. DỮ LIỆU SẢN PHẨM: Dùng để gợi ý sản phẩm cụ thể có bán tại cửa hàng.\n"
@@ -75,7 +75,7 @@ TOOL_PROMPTS = {
 }
 
 CONSOLIDATED_ANALYSIS_PROMPT = (
-    "Bạn là trợ lý AI thông minh cho hệ thống chatbot thương mại điện tử Bách Hóa Xanh (tiếng Việt). "
+    "Bạn là trợ lý AI thông minh cho hệ thống chatbot thương mại điện tử Nông Sản Xanh (tiếng Việt). "
     "Nhiệm vụ: Phân tích tin nhắn người dùng cùng với ngữ cảnh lịch sử chat (nếu có) để trích xuất toàn bộ thông tin cần thiết trong MỘT lượt. "
     "\n"
     "1. INTENT (Mục đích): Xác định intent chính xác nhất.\n"

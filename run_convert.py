@@ -7,7 +7,7 @@ from convert_bhx_json_sql import BHXDataConverter
 import os
 
 def main():
-    print("🚀 BÁCH HÓA XANH - CONVERT JSON TO MYSQL & SQL")
+    print("🚀 NÔNG SẢN XANH - CONVERT JSON TO MYSQL & SQL")
     print("=" * 50)
     
     # Kiểm tra file JSON
