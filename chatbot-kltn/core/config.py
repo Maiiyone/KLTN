@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     qdrant_url: str | None = None
     qdrant_api_key: str | None = None
     qdrant_collection: str = "products"
+    allowed_origins: str | list[str] = "*"
 
     model_config = {
         "env_file": ".env",

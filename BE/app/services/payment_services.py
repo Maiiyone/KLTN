@@ -98,7 +98,7 @@ class MoMoPaymentService:
             "amount": str(int(payment.amount)),
             "orderId": momo_order_id,
             "orderInfo": f"Payment for Order #{order.order_number}",
-            "redirectUrl": payment.return_url,
+            "redirectUrl": f"{payment.return_url}?payment_id={payment.id}" if "?" not in payment.return_url else f"{payment.return_url}&payment_id={payment.id}",
             "ipnUrl": settings.momo_ipn_url,  # ❗ PHẢI LÀ PUBLIC URL
             "extraData": extra_data,
             "requestType": "payWithMethod",
@@ -282,7 +282,9 @@ class VNPayPaymentService:
         VNP_TMN_CODE = settings.vnpay_tmn_code 
         VNP_HASH_SECRET = settings.vnpay_hash_secret 
         VNP_URL = settings.vnpay_url  # "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html"
-        VNP_RETURN_URL = settings.vnpay_return_url
+        # Sử dụng return_url từ frontend request, append payment_id
+        base_return_url = payment.return_url or settings.vnpay_return_url
+        VNP_RETURN_URL = f"{base_return_url}?payment_id={payment.id}" if "?" not in base_return_url else f"{base_return_url}&payment_id={payment.id}"
 
         # 1. Lấy thời gian hiện tại (VN Time)
         now = datetime.now(VNPayPaymentService.VN_TZ)

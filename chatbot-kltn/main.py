@@ -9,10 +9,23 @@ app = FastAPI(title="Nông sản xanh Chatbot Service", version="0.1.0")
 settings = get_settings()
 chatbot_service = ChatbotService()
 
+# Parse allowed_origins
+origins = settings.allowed_origins
+if isinstance(origins, str):
+    if origins.strip() == "*":
+        origins = ["*"]
+    else:
+        origins = [o.strip() for o in origins.split(",")]
+
+# If allow_origins=["*"], allow_credentials must be False
+allow_creds = True
+if origins == ["*"]:
+    allow_creds = False
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
-    allow_credentials=True,
+    allow_origins=origins,
+    allow_credentials=allow_creds,
     allow_methods=["*"],
     allow_headers=["*"],
 )
