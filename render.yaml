@@ -43,6 +43,8 @@ services:
         sync: false
       - key: VNPAY_RETURN_URL
         sync: false
+      - key: VNPAY_FRONTEND_RETURN_URL
+        sync: false
       - key: GOOGLE_API_KEY
         sync: false
       - key: ALLOWED_ORIGINS

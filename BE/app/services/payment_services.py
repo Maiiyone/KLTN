@@ -230,8 +230,11 @@ class VNPayPaymentService:
         return vnp_secure_hash.lower() == my_secure_hash.lower()
     @staticmethod
     def handle_callback(db: Session, data: Dict[str, Any]) -> Dict[str, Any]:
+        logger.info(f"[VNPAY] Callback Data: {data}")
+
         # 1. Xác thực chữ ký
         if not VNPayPaymentService.verify_signature(data):
+            logger.error("[VNPAY] Invalid Signature")
             return {"success": False, "message": "Invalid Signature"}
 
         # 2. Lấy thông tin giao dịch
@@ -242,10 +245,14 @@ class VNPayPaymentService:
         # 3. Tìm Payment trong DB
         payment = db.query(Payment).filter(Payment.request_id == vnp_txn_ref).first()
         if not payment:
+            logger.error(f"[VNPAY] Payment not found for request_id: {vnp_txn_ref}")
             return {"success": False, "message": "Payment not found"}
+
+        logger.info(f"[VNPAY] Found Payment {payment.id}, Status: {payment.status}")
 
         # 4. Kiểm tra trạng thái hiện tại (Tránh xử lý lại đơn đã xong)
         if payment.status == PaymentStatus.PAID:
+            logger.info("[VNPAY] Payment already PAID. Skipping.")
             return {"success": True, "message": "Payment already confirmed"}
 
         # 5. Cập nhật trạng thái
@@ -253,6 +260,7 @@ class VNPayPaymentService:
         
         if vnp_response_code == "00":
             # --- THANH TOÁN THÀNH CÔNG ---
+            logger.info(f"[VNPAY] Payment Success! Updating status to PAID.")
             payment.status = PaymentStatus.PAID
             payment.transaction_id = vnp_transaction_no
             payment.paid_at = datetime.utcnow()
@@ -265,10 +273,13 @@ class VNPayPaymentService:
                     payment.order.status = OrderStatus.CONFIRMED
         else:
             # --- THANH TOÁN THẤT BẠI ---
+            logger.error(f"[VNPAY] Payment Failed. Code: {vnp_response_code}")
             payment.status = PaymentStatus.FAILED
             payment.failed_reason = f"VNPay Error Code: {vnp_response_code}"
 
         db.commit()
+        db.refresh(payment) # Refresh to ensuring data is persisted
+        logger.info(f"[VNPAY] DB Updated. Payment Status: {payment.status}")
         
         return {
             "success": True if vnp_response_code == "00" else False,
