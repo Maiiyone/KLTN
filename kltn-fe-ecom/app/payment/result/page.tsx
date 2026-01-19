@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { MainLayout } from '@/components/layouts/MainLayout';
 import { PaymentResult } from '@/components/payment/PaymentResult';
@@ -9,7 +9,7 @@ import { Alert } from '@/components/ui/Alert';
 import { usePayment } from '@/lib/hooks/usePayment';
 import { PaymentStatus } from '@/lib/types';
 
-export default function PaymentResultPage() {
+function PaymentResultContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { checkPaymentWithRetry } = usePayment();
@@ -99,26 +99,34 @@ export default function PaymentResultPage() {
   };
 
   return (
-    <MainLayout>
-      <div className="container mx-auto px-4 py-16">
-        {error && (
-          <Alert variant="error" className="mb-6 max-w-2xl mx-auto">
-            {error}
-          </Alert>
-        )}
+    <div className="container mx-auto px-4 py-16">
+      {error && (
+        <Alert variant="error" className="mb-6 max-w-2xl mx-auto">
+          {error}
+        </Alert>
+      )}
 
-        {status === 'loading' ? (
-          <PaymentLoading message="Đang kiểm tra trạng thái thanh toán..." />
-        ) : (
-          <PaymentResult
-            status={status}
-            paymentData={paymentData || undefined}
-            onViewOrder={handleViewOrder}
-            onRetry={handleRetry}
-            onBackToHome={handleBackToHome}
-          />
-        )}
-      </div>
+      {status === 'loading' ? (
+        <PaymentLoading message="Đang kiểm tra trạng thái thanh toán..." />
+      ) : (
+        <PaymentResult
+          status={status}
+          paymentData={paymentData || undefined}
+          onViewOrder={handleViewOrder}
+          onRetry={handleRetry}
+          onBackToHome={handleBackToHome}
+        />
+      )}
+    </div>
+  );
+}
+
+export default function PaymentResultPage() {
+  return (
+    <MainLayout>
+      <Suspense fallback={<PaymentLoading message="Đang tải..." />}>
+        <PaymentResultContent />
+      </Suspense>
     </MainLayout>
   );
 }
