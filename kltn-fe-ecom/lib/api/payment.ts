@@ -48,28 +48,34 @@ class PaymentService {
     return response.data;
   }
 
-  /* ---------- polling with retry ---------- */
-  async checkPaymentWithRetry(
-  paymentId: number,
-  maxRetries = 5,
-  delay = 2000
-): Promise<PaymentStatus> {
-  let lastStatus!: PaymentStatus;
-
-  for (let i = 0; i < maxRetries; i++) {
-    const res = await this.getPaymentStatus(paymentId);
-    lastStatus = res;
-
-    if (res.status === 'paid' || res.status === 'failed') {
-      return res;
-    }
-
-    await this.sleep(delay);
+  /* ---------- verify vnpay return ---------- */
+  async verifyVNPayReturn(params: any): Promise<any> {
+    const response = await apiClient.get('/payments/vnpay/return', { params });
+    return response.data;
   }
 
-  // ⬅️ return FULL PaymentStatus (pending từ backend)
-  return lastStatus;
-}
+  /* ---------- polling with retry ---------- */
+  async checkPaymentWithRetry(
+    paymentId: number,
+    maxRetries = 5,
+    delay = 2000
+  ): Promise<PaymentStatus> {
+    let lastStatus!: PaymentStatus;
+
+    for (let i = 0; i < maxRetries; i++) {
+      const res = await this.getPaymentStatus(paymentId);
+      lastStatus = res;
+
+      if (res.status === 'paid' || res.status === 'failed') {
+        return res;
+      }
+
+      await this.sleep(delay);
+    }
+
+    // ⬅️ return FULL PaymentStatus (pending từ backend)
+    return lastStatus;
+  }
 
 }
 

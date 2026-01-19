@@ -7,6 +7,7 @@ import { PaymentResult } from '@/components/payment/PaymentResult';
 import { PaymentLoading } from '@/components/payment/PaymentLoading';
 import { Alert } from '@/components/ui/Alert';
 import { usePayment } from '@/lib/hooks/usePayment';
+import { paymentAPI } from '@/lib/api/payment';
 import { PaymentStatus } from '@/lib/types';
 
 function PaymentResultContent() {
@@ -46,6 +47,22 @@ function PaymentResultContent() {
             router.replace(`/auth/login?redirect=/payment/result&payment_id=${paymentId}`);
           }, 3000);
           return;
+        }
+
+        // ✅ CHECK VNPay Return
+        if (searchParams.get('vnp_ResponseCode')) {
+          try {
+            // Convert searchParams to simple object
+            const params: Record<string, string> = {};
+            searchParams.forEach((value, key) => {
+              params[key] = value;
+            });
+            // Call Backend to verify signature & update DB
+            await paymentAPI.verifyVNPayReturn(params);
+          } catch (verifyErr) {
+            console.error("VNPay verify error:", verifyErr);
+            // Continue to check status normally (maybe IPN updated it)
+          }
         }
 
         // ✅ CHECK STATUS
