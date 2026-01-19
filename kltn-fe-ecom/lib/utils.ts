@@ -12,7 +12,12 @@ export function formatPrice(price: number): string {
 }
 
 export function formatDate(date: string): string {
-  return new Date(date).toLocaleDateString('vi-VN', {
+  if (!date) return '';
+  // Nếu date string k có múi giờ (Z hoặc +...), coi nó là UTC
+  const d = new Date(date.endsWith('Z') || /[+-]\d{2}:\d{2}$/.test(date) ? date : `${date}Z`);
+
+  return d.toLocaleDateString('vi-VN', {
+    timeZone: 'Asia/Ho_Chi_Minh',
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -22,7 +27,11 @@ export function formatDate(date: string): string {
 }
 
 export function formatShortDate(date: string): string {
-  return new Date(date).toLocaleDateString('vi-VN', {
+  if (!date) return '';
+  const d = new Date(date.endsWith('Z') || /[+-]\d{2}:\d{2}$/.test(date) ? date : `${date}Z`);
+
+  return d.toLocaleDateString('vi-VN', {
+    timeZone: 'Asia/Ho_Chi_Minh',
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
