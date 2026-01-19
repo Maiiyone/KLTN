@@ -8,15 +8,9 @@ services:
     plan: free
     envVars:
       - key: NEXT_PUBLIC_API_URL
-        fromService:
-          type: web
-          name: be-api-service
-          property: host
+        sync: false
       - key: NEXT_PUBLIC_CHATBOT_URL
-        fromService:
-          type: web
-          name: chatbot-service
-          property: host
+        sync: false
 
   # Backend Service
   - type: web
