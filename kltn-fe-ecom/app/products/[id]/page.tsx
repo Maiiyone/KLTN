@@ -33,7 +33,7 @@ export default function ProductDetailPage() {
   const [reviewComment, setReviewComment] = useState('');
   const [submittingReview, setSubmittingReview] = useState(false);
   const [activeTab, setActiveTab] = useState<'description' | 'reviews'>('description');
-  
+
   const addItem = useCartStore((state) => state.addItem);
   const { isAuthenticated } = useAuthStore();
   const toast = useToast();
@@ -145,7 +145,7 @@ export default function ProductDetailPage() {
                 </div>
               )}
             </div>
-            
+
             {/* Trust badges */}
             <div className="grid grid-cols-3 gap-3">
               <div className="bg-white rounded-lg p-3 text-center shadow-sm hover:shadow-md transition-all">
@@ -180,11 +180,10 @@ export default function ProductDetailPage() {
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
-                        className={`w-4 h-4 ${
-                          i < Math.floor(product.average_rating!)
+                        className={`w-4 h-4 ${i < Math.floor(product.average_rating!)
                             ? 'fill-yellow-400 text-yellow-400'
                             : 'text-gray-300'
-                        }`}
+                          }`}
                       />
                     ))}
                   </div>
@@ -222,7 +221,7 @@ export default function ProductDetailPage() {
                   <span className="text-gray-600 text-sm font-medium">Tồn kho:</span>
                   {product.stock_quantity > 0 ? (
                     <span className="text-green-600 font-bold bg-green-50 px-2 py-1 rounded-lg text-sm">
-                      {product.stock_quantity} {product.unit}
+                      {product.stock_quantity}
                     </span>
                   ) : (
                     <span className="text-red-600 font-bold bg-red-50 px-2 py-1 rounded-lg text-sm">
@@ -280,21 +279,19 @@ export default function ProductDetailPage() {
             <div className="flex">
               <button
                 onClick={() => setActiveTab('description')}
-                className={`flex-1 px-8 py-5 font-bold text-lg transition-all ${
-                  activeTab === 'description'
+                className={`flex-1 px-8 py-5 font-bold text-lg transition-all ${activeTab === 'description'
                     ? 'text-green-600 border-b-4 border-green-600 bg-green-50'
                     : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
-                }`}
+                  }`}
               >
                 📋 Mô Tả Sản Phẩm
               </button>
               <button
                 onClick={() => setActiveTab('reviews')}
-                className={`flex-1 px-8 py-5 font-bold text-lg transition-all flex items-center justify-center gap-2 ${
-                  activeTab === 'reviews'
+                className={`flex-1 px-8 py-5 font-bold text-lg transition-all flex items-center justify-center gap-2 ${activeTab === 'reviews'
                     ? 'text-green-600 border-b-4 border-green-600 bg-green-50'
                     : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
-                }`}
+                  }`}
               >
                 <MessageCircle className="w-5 h-5" />
                 Đánh Giá ({reviews.length})
@@ -310,7 +307,7 @@ export default function ProductDetailPage() {
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">Chi tiết sản phẩm</h3>
                     <p className="text-gray-700 text-lg leading-relaxed">{product.description}</p>
-                    
+
                     <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="bg-green-50 rounded-xl p-6 border-2 border-green-200">
                         <h4 className="font-bold text-lg text-green-800 mb-3">🌱 Cam kết chất lượng</h4>
@@ -351,11 +348,10 @@ export default function ProductDetailPage() {
                             className="p-1 transition-transform hover:scale-110"
                           >
                             <Star
-                              className={`w-10 h-10 ${
-                                rating <= reviewRating
+                              className={`w-10 h-10 ${rating <= reviewRating
                                   ? 'fill-yellow-400 text-yellow-400'
                                   : 'text-gray-300'
-                              }`}
+                                }`}
                             />
                           </button>
                         ))}
@@ -410,11 +406,10 @@ export default function ProductDetailPage() {
                               {[...Array(5)].map((_, i) => (
                                 <Star
                                   key={i}
-                                  className={`w-4 h-4 ${
-                                    i < review.rating
+                                  className={`w-4 h-4 ${i < review.rating
                                       ? 'fill-yellow-400 text-yellow-400'
                                       : 'text-gray-300'
-                                  }`}
+                                    }`}
                                 />
                               ))}
                             </div>

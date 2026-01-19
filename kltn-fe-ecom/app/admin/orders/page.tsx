@@ -280,9 +280,12 @@ export default function AdminOrdersPage() {
             <div>
               <h4 className="font-semibold mb-2">Sản phẩm</h4>
               <div className="space-y-2">
-                {selectedOrder.order_items.map((item) => (
+                {(selectedOrder.order_items || (selectedOrder as any).items || []).map((item) => (
                   <div key={item.id} className="flex justify-between text-sm p-2 bg-gray-50 rounded">
-                    {item.product_name} x {item.quantity}
+                    <span>
+                      {item.product?.product_name || item.product_name || 'Sản phẩm không xác định'}
+                      <span className="ml-2 font-bold">x {item.quantity}</span>
+                    </span>
                     <span className="font-medium">{formatPrice(item.total_price)}</span>
                   </div>
                 ))}
